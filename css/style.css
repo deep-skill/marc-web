@@ -1,10 +1,7 @@
 /*
-  Theme Name:  Industrial - Industry HTML Template
-  Theme URL: 
-  Author: udayraj
-  Author URI: https://themeforest.net/user/udayraj
-  Creation Date: 30 April 2017
-  Description: A default stylesheet for Industrial - Industry HTML Template
+  Name: Geofrontier  Web
+  Author: manduinca
+  Creation Date: 19 July 2018
   Version: 1.0
 */
 
@@ -57,8 +54,8 @@
 43. Preloader
 
 /* =============== Colors Used=====================
-  Yellow: #FFD202;
-  Dark Yellow: #ECC53F;
+  Blue: #2F2FD5;
+  Dark Blue: #24389F;
   Black Tone: #252525;
   Dark Gray: #222222;
   White: #FFF;
@@ -196,7 +193,7 @@ ul {
   border-radius: 4px;
   padding: 12px; 
   text-transform: uppercase;
-  background-color: #ECC53F;
+  background-color: #24389F;
   -webkit-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -229,7 +226,7 @@ ul {
 }
 .btn-white:hover {
   color: #FFF;
-  background-color: #ECC53F;
+  background-color: #24389F;
 }
 .btn-grey {
   border-radius: 2px;
@@ -241,8 +238,8 @@ ul {
 }
 .btn-grey:hover {  
   border-radius: 2px;
-  background-color: #ECC53F;
-  border: solid 1px #ECC53F;
+  background-color: #24389F;
+  border: solid 1px #24389F;
 }
 .section {
   margin-bottom: 35px;
@@ -396,7 +393,7 @@ label span {
   font-size: 20px;
 }
 .top-social-icon li a:hover {
-  color: #FFD202;
+  color: #2F2FD5;
 }
 @media(max-width:992px) {  
   .info-nav {
@@ -462,13 +459,17 @@ label span {
 }
 #cssmenu > ul > li:hover,
 #cssmenu > ul > li.active {
-  border-bottom: 4px solid #ECC53F;
+  border-bottom: 4px solid #24389F;
 }
 #cssmenu > ul > li.has-sub > a {
   margin-right: 25px;
 }
-#cssmenu ul ul {    
+#cssmenu ul ul {
   margin-top: 4px;
+}
+#cssmenu ul ul li a:hover {
+  background-color: #24389F;
+  color: #FFF
 }
 .request-model-body {
   margin: 0 auto;
@@ -483,7 +484,7 @@ label span {
   text-align: left;
   margin: 0 auto;
 }
-.request-model-body textarea {    
+.request-model-body textarea {
   padding-top: 10px;
   padding-left: 15px;
   width: 60%;
@@ -511,7 +512,7 @@ label span {
   text-transform: uppercase;
 }
 .download-btn a i {
-  color: #ECC53F;
+  color: #24389F;
 }
 .search-btn {
   width: 40px;
@@ -580,8 +581,8 @@ label span {
   color: #999;
   background: #222;
 }
-.search-close:hover {  
-  color: #ECC53F;
+.search-close:hover {
+  color: #24389F;
 }
 .search input:focus {
   outline: none!important;
@@ -617,7 +618,7 @@ label span {
     color: #777; 
   }
   #cssmenu.small-screen li > ul > li:hover {
-    background: #ECC53F; 
+    background: #24389F; 
   }
   #cssmenu.small-screen li > ul > li:hover a {
     color: #222; 
@@ -676,7 +677,7 @@ label span {
   color: #FFF;
 }
 .slider-heading span {
-  color: #ECC53F;
+  color: #24389F;
 }
 .slider-sub-heading {
   color: #FFF;
@@ -685,10 +686,11 @@ label span {
   margin: 13px 0 37px;
 }
 .slider-dtl .btn-default {
-  color: #333333;
+  color: #FFF;
 }
 .slider-dtl .btn-default:hover {
-  color: #FFF;
+  color: #333333;
+  background-color: #FFF;
 }
 .home-slider .owl-prev {
   left: 30px;
@@ -811,7 +813,7 @@ label span {
   width: 100%;
 }
 .solution-block .overlay-bg i {
-  color: #E7B60D;
+  color: #FFF;
   font-size: 34px;
   line-height: 50px;
   position: absolute;
@@ -825,7 +827,7 @@ label span {
   transition: all 0.5s ease;
 }
 .solution-block .overlay-bg i:hover {
-  color: #FFF;
+  color: #24389F;
 }
 .solution-dtl {
   height: auto;
@@ -914,7 +916,7 @@ label span {
 }
 .featured-dtl .btn-default {
   margin-top: 20px;
-  color: #2C2C2C;
+  color: #FFF;
 }
 .featured-dtl .btn-default:hover {
   color: #FFF;
@@ -975,7 +977,7 @@ label span {
   line-height: 1.42;
   letter-spacing: 0.5px;
   text-align: center;
-  color: #222;
+  color: #FFF;
 }
 @media(max-width:992px) {  
   .quote-text {  
@@ -1014,7 +1016,7 @@ label span {
   width: 72px;
   height: 72px;  
   border-radius: 4px;
-  color: #FFD202;
+  color: #2F2FD5;
   font-size: 34px;
   line-height: 80px;
   text-align: center;
@@ -1095,7 +1097,7 @@ label span {
 }
 .rating li {
   display: inline-block;
-  color: #E7B60D;
+  color: #24389F;
 }
 .rating li.disable {
   color: #C2C2C2;
@@ -1146,7 +1148,7 @@ label span {
   color: #FFF; 
 }
 .counter-main-block .counter-heading span {
-  color: #FFD202;
+  color: #2F2FD5;
 }
 .counter-block {
   padding: 10px 0 0;
@@ -1203,7 +1205,7 @@ label span {
   position: absolute;
   bottom: -20px;
   width: 100%;
-  background-color: rgba(236,197,63,0.7);
+  background-color: rgba(101,115,187,0.7);
   opacity: 0;
   -webkit-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
@@ -1230,7 +1232,7 @@ label span {
 }
 .team-social ul li:hover {
   padding: 10px 10px 8px;
-  background-color: #ECC53f;
+  background-color: #24389F;
 }
 .team-block p {
   line-height: 1.85;
@@ -1297,7 +1299,7 @@ label span {
     /*===== Call Out =====*/
 /* ================================= */
 .call-out-main-block {
-  background-color: #ECC53F;
+  background-color: #24389F;
   padding: 34px 0 31px; 
   box-shadow: 1px 5.7px 10px 0 rgba(0, 0, 0, 0.5);
   z-index: 999;
@@ -1428,7 +1430,7 @@ label span {
    padding: 0 5px;
 }
 .footer-nav ul li a:hover {
-  color: #ECC53F;
+  color: #24389F;
 }
 @media(max-width:767px) {  
   .copyright-text p {
@@ -1608,7 +1610,7 @@ label span {
   border-radius: 3px;
 }
 .address-block {
-  background-color: #ECC53F;
+  background-color: #24389F;
   margin-top: -131px;
 }
 .address-top-block {
@@ -1777,7 +1779,7 @@ label span {
 }
 .projects-filter ul li:hover {  
   color: #222;
-  border-bottom: 3px solid #ECC53F;
+  border-bottom: 3px solid #24389F;
 }
 .scale-anm {
   transform: scale(1);
@@ -1804,7 +1806,7 @@ label span {
 .project-dtl-block {
   background-color: #F6F6F6;
   padding: 40px 47px 40px 37px;
-  border-left: 3px solid #ECC53F;
+  border-left: 3px solid #24389F;
   margin-bottom: 34px;
 }
 .project-dtl-heading {
@@ -1818,8 +1820,8 @@ label span {
   content: " ";
   width: 35px;
   height: 3px;
-  background-color: #ECC53F;
-  color: #ECC53F;
+  background-color: #24389F;
+  color: #24389F;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1858,7 +1860,7 @@ label span {
 }
 .project-description ul li::before {
   content: "• ";
-  color: #ECC53F; 
+  color: #24389F; 
   font-size: 15px;
 }
 .project-dtl-img {
@@ -1955,8 +1957,8 @@ label span {
 .pagination>li>a:hover, 
 .pagination>li>span:hover   {
   color: #FFF;
-  background-color: #ECC53F;
-  border: 0 solid #ECC53F;
+  background-color: #24389F;
+  border: 0 solid #24389F;
 }
 
 /* ================================= */
@@ -2074,7 +2076,7 @@ label span {
 }
 .cat-widget ul li::before {
   content: "• ";
-  color: #ECC53F; 
+  color: #24389F; 
   font-size: 15px;
 }
 .tag-widget ul li {
@@ -2095,7 +2097,7 @@ label span {
   transition: all 0.5s ease;
 }
 .tag-widget ul li:hover {
-  background-color: #ECC53F;
+  background-color: #24389F;
 }
 .tag-widget ul li:hover a {
   color: #FFF;
@@ -2621,7 +2623,7 @@ hr {
   z-index: 99;
 }
 .ui-slider-range.ui-widget-header.ui-corner-all {
-  background: #ECC53F none repeat scroll 0 0;
+  background: #24389F none repeat scroll 0 0;
   height: 5px;
   position: absolute;
 }
@@ -2753,7 +2755,7 @@ li.customer-review {
   color: #222;
 }
 .single-product-category a:hover {
-  color: #ECC53F;
+  color: #24389F;
 }
 .product-comment-block {
   padding: 60px 0 30px;
@@ -2899,14 +2901,14 @@ li.customer-review {
 .sol-dtl-faq .faq-btn:hover,
 .sol-dtl-faq .faq-btn:focus,
 .sol-dtl-faq .faq-btn:active {
-  color: #ECC53F;
+  color: #24389F;
   background-color: transparent;
   border: none;
   outline: 0 auto -webkit-focus-ring-color;
   box-shadow: none;
 }
 .sol-dtl-faq .faq-btn-minus {
-  display: inherit;color: #ECC53F;
+  display: inherit;color: #24389F;
 }
 .sol-dtl-faq .collapsed .faq-btn-minus {
   display: none;
@@ -2951,7 +2953,7 @@ li.customer-review {
 .faq-page-block .faq-btn:focus,
 .faq-page-block .faq-btn:active {
   color: #FFF;
-  background-color: #ECC53F;
+  background-color: #24389F;
   border: none;
   border-radius: 2px;
   outline: 0 auto -webkit-focus-ring-color;
@@ -2960,7 +2962,7 @@ li.customer-review {
 .faq-page-block .faq-btn-minus {
   display: inherit;
   color: #FFF;
-  background-color: #ECC53F;
+  background-color: #24389F;
 }
 .faq-page-block .collapsed .faq-btn-minus {
   display: none;
@@ -3198,7 +3200,7 @@ li.customer-review {
   width: 72px;
   height: 72px;  
   border-radius: 4px;
-  color: #FFD202;
+  color: #2F2FD5;
   font-size: 34px;
   line-height: 80px;
   background: url(../images/icons/icons-bg.jpg);
