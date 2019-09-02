@@ -1368,7 +1368,7 @@ label span {
 .footer-solutions ul li {
   font-size: 13px;
   font-weight: 400;
-  line-height: 1.85;
+  line-height: 1.2;
   letter-spacing: 0.3px;
   padding: 10px 0 10px;
   color: #888;
@@ -1390,7 +1390,7 @@ label span {
 }
 .footer-contact p {
   padding: 4px 0 10px;
-  line-height: 1.69;
+  line-height: 1.6;
   font-weight: 400;
 }
 .footer-address li {
