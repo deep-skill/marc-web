@@ -3338,7 +3338,7 @@ li.customer-review {
   z-index: 9999999;
 }
 .status {
-  background-image: url(../images/preloader.png);
+  background-image: url(../images/preloader-yellow.png);
   animation: bounce 2s infinite;
  -webkit-animation: bounce 2s infinite;
  -moz-animation: bounce 2s infinite;
