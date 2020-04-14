@@ -1679,7 +1679,7 @@ label span {
   color: #FFF;
 }
 .address-arrow ul li:hover {
-  background-color: #E6C03E;
+  background-color: #222;
 }
 @media(max-width:767px) {
   .address-block {
