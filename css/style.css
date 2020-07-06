@@ -2593,7 +2593,7 @@ hr {
 .pdct-cat-widget ul li:hover,
 .pdct-cat-widget ul li.active {
   background-color: #FAFAFA;
-  border-left: 3px solid #ECC641;
+  border-left: 3px solid #232e9f;
 }
 /* Price Slider*/
 .price-slider-amount > input {
