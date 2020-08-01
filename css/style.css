@@ -2282,6 +2282,21 @@ li.share {
   }
 }
 
+/* style de Whatapp */
+.appWhatapp {
+  position: fixed;
+  right: 26px;
+  bottom: 20px;
+  width: 60px;
+  z-index: 1000;
+}
+
+.appWhatapp img{
+  width: 100%;
+  heigth: auto;
+}
+/*Terminado el Style de whatsapp */
+
 /* ================================= */
     /*===== My Account Page =====*/
 /* ================================= */
