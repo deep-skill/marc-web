@@ -664,6 +664,16 @@ label span {
 /* ================================= */
     /*===== Home Slider =====*/
 /* ================================= */
+picture  img {
+  width: 100%;
+  height: 550px;
+  position: 50% 0%;
+  repeat: no-repeat;
+  size: cover;
+  position: relative;
+
+}
+
 .home-slider-bg {
   width: 100%;
   height: 550px;
@@ -672,6 +682,7 @@ label span {
   background-size: cover;
   position: relative;
 }
+
 .slider-dtl {
   width: 509px;
   position: absolute;
