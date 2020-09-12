@@ -47,6 +47,36 @@ Author: manduinca
 <!-- end head -->
 <!--body start-->
 <body>
+
+  <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v8.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+<div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="101927331580716"
+  theme_color="#2e3d87"
+  logged_in_greeting="¡Hola! ¿como podemos ayudarte?"
+  logged_out_greeting="¡Hola! ¿como podemos ayudarte?">
+</div>
+  <!-- end Facebook SDK for JavaScript -->
+
+
 <!-- preloader -->
   <div class="preloader">
     <div class="status">
@@ -158,9 +188,9 @@ Author: manduinca
             </div>
           </div>
         </div>
-        <div class="col-sm-2 pad-0">
+       <div class="col-sm-2 pad-0">
           <div class="nav-right">
-            <ul>
+           <ul>
               <li class="download-btn">
                 <a href="#"><i class="ti-download"></i> Descargas</a>
               </li>
@@ -791,7 +821,7 @@ Author: manduinca
     </div>
     <!-- Whatapp -->
     <a class="appWhatapp" target="_blank" href="https://api.whatsapp.com/send?phone=51997336060&text=hola,%20qué%20tal?">
-       <img src="images/icons/imagewhatsapp.png" alt="Whatapp">
+       <img src="images/icons/whatsapp.svg" alt="Whatapp">
     </a>
   <!-- Terminado Whatapp -->
   </footer>
