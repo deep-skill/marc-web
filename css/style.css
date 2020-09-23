@@ -379,6 +379,18 @@ label span {
   letter-spacing: 0.4px;
   color: #888;
 }
+/*Cambio movil del info-bar*/
+@media(max-width:500px) {
+  .info-bar p {
+    text-align:center;
+    font-size: 9.5px;
+    font-family: 'Roboto', sans-serif;
+    padding: 14px 0;
+    letter-spacing: 0.4px;
+    color: #888;
+  }
+}
+/*termiando el cambio*/
 .top-social-icon  {
   text-align: right;
 }
@@ -410,7 +422,7 @@ label span {
     margin: 0 auto;
     left: 0;
     right: 0;
-    display: block;
+    display: none;  /* Un cambio de block a none */
   }
   .nav-bar .btn-default {
     display: none;
@@ -428,6 +440,13 @@ label span {
   background: -ms-linear-gradient(to top, rgba(0,0,0,0.05), rgba(255,255,255,0.05)), linear-gradient(rgba(255,255,255,0.05), rgba(255,255,255,0.05));
   background: linear-gradient(to top, rgba(0,0,0,0.05), rgba(255,255,255,0.05)), linear-gradient(rgba(255,255,255,0.05), rgba(255,255,255,0.05));
 }
+/* Un cambio para movil */
+@media(max-width:767px) {
+  .nav-bar{
+  padding: 0 0 0;
+  }
+}
+/* terminado el cambio*/
 .info-nav {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -451,6 +470,13 @@ label span {
   z-index: 99;
   position: relative;
 }
+/* Un cambio para movil */
+@media(max-width:767px) {
+  .navigation{
+  margin: 0 0 0;
+  }
+}
+/* terminado el cambio*/
 #cssmenu > ul > li a {
   border-left: 1px solid rgba(255,255,255,0.08);
 }
