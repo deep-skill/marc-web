@@ -1,0 +1,2506 @@
+{
+  "sismos": [
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0266",
+      "magnitud": 4.1,
+      "ubicacion": "50 km al SO de San Juan de Marcona, Nasca - Ica",
+      "fechaHora": "11/05/2026 14:09:15",
+      "lat": -15.78,
+      "lng": -75.34,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0266"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0267",
+      "magnitud": 4.7,
+      "ubicacion": "24 km al S de Atico, Caravelí - Arequipa",
+      "fechaHora": "",
+      "lat": -16.42,
+      "lng": -73.63,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0267"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0268",
+      "magnitud": 3.4,
+      "ubicacion": "8 km al S de Huasicancha, Huancayo - Junín",
+      "fechaHora": "12/05/2026 12:23:40",
+      "lat": -12.4,
+      "lng": -75.26,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0268"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0261",
+      "magnitud": 3.5,
+      "ubicacion": "10 km al NO de Yauca, Caravelí - Arequipa",
+      "fechaHora": "10/05/2026 08:15:46",
+      "lat": -15.61,
+      "lng": -74.6,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0261"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0262",
+      "magnitud": 4.2,
+      "ubicacion": "54 km al SO de Palpa, Palpa - Ica",
+      "fechaHora": "10/05/2026 08:50:51",
+      "lat": -14.84,
+      "lng": -75.57,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0262"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0263",
+      "magnitud": 3.9,
+      "ubicacion": "43 km al E de Picota, Picota - San Martín",
+      "fechaHora": "10/05/2026 16:19:43",
+      "lat": -7.04,
+      "lng": -75.96,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0263"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0264",
+      "magnitud": 4.5,
+      "ubicacion": "11 km al SO de Sullana, Sullana - Piura",
+      "fechaHora": "11/05/2026 08:50:57",
+      "lat": -4.96,
+      "lng": -80.77,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0264"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0265",
+      "magnitud": 4.3,
+      "ubicacion": "78 km al SO de Chimbote, Santa - Áncash",
+      "fechaHora": "",
+      "lat": -9.44,
+      "lng": -79.18,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0265"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0256",
+      "magnitud": 3.5,
+      "ubicacion": "11 km al NE de Mollendo, Islay - Arequipa",
+      "fechaHora": "",
+      "lat": -16.94,
+      "lng": -71.97,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0256"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0257",
+      "magnitud": 4,
+      "ubicacion": "39 km al SO de Palpa, Palpa - Ica",
+      "fechaHora": "07/05/2026 07:11:41",
+      "lat": -14.84,
+      "lng": -75.37,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0257"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0258",
+      "magnitud": 4,
+      "ubicacion": "80 km al O de San Juan de Marcona, Nasca - Ica",
+      "fechaHora": "08/05/2026 10:42:19",
+      "lat": -15.2,
+      "lng": -75.89,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0258"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0259",
+      "magnitud": 4.9,
+      "ubicacion": "72 km al O de San Juan de Marcona, Nasca - Ica",
+      "fechaHora": "08/05/2026 12:14:37",
+      "lat": -15.17,
+      "lng": -75.81,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0259"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0260",
+      "magnitud": 4.3,
+      "ubicacion": "22 km al NE de Santa María de Nieva, Condorcanqui - Amazonas",
+      "fechaHora": "08/05/2026 12:50:07",
+      "lat": -4.43,
+      "lng": -77.76,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0260"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0251",
+      "magnitud": 4,
+      "ubicacion": "182 km al SO de Huarmey, Huarmey - Áncash",
+      "fechaHora": "04/05/2026 00:51:05",
+      "lat": -11.16,
+      "lng": -79.39,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0251"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0252",
+      "magnitud": 3.4,
+      "ubicacion": "13 km al SE de Santa Lucía, Lampa - Puno",
+      "fechaHora": "05/05/2026 07:43:28",
+      "lat": -15.8,
+      "lng": -70.55,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0252"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0253",
+      "magnitud": 5,
+      "ubicacion": "13 km al NE de Zorritos, Contralmirante Villar - Tumbes",
+      "fechaHora": "05/05/2026 10:58:25",
+      "lat": -3.56,
+      "lng": -80.61,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0253"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0254",
+      "magnitud": 4.2,
+      "ubicacion": "44 km al SO de Barranca, Datem del Marañón - Loreto",
+      "fechaHora": "05/05/2026 11:31:34",
+      "lat": -5,
+      "lng": -77.04,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0254"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0255",
+      "magnitud": 3.5,
+      "ubicacion": "23 km al O de Comunidad Camisea, La Convención - Cusco",
+      "fechaHora": "06/05/2026 02:25:19",
+      "lat": -11.68,
+      "lng": -73.15,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0255"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0246",
+      "magnitud": 3.5,
+      "ubicacion": "30 km al SO de Santa Lucía, Lampa - Puno",
+      "fechaHora": "01/05/2026 22:46:22",
+      "lat": -15.88,
+      "lng": -70.81,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0246"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0247",
+      "magnitud": 4,
+      "ubicacion": "59 km al NO de San Juan, Nasca - Ica",
+      "fechaHora": "02/05/2026 03:22:43",
+      "lat": -14.75,
+      "lng": -75.7,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0247"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0248",
+      "magnitud": 3.4,
+      "ubicacion": "6 km al E de Calacoa, Mariscal Nieto - Moquegua",
+      "fechaHora": "03/05/2026 03:19:54",
+      "lat": -16.74,
+      "lng": -70.63,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0248"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0249",
+      "magnitud": 3.4,
+      "ubicacion": "23 km al E de Panao, Pachitea - Huánuco",
+      "fechaHora": "03/05/2026 22:04:20",
+      "lat": -9.94,
+      "lng": -75.79,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0249"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0250",
+      "magnitud": 4.1,
+      "ubicacion": "16 km al SE de Yauca, Caravelí - Arequipa",
+      "fechaHora": "04/05/2026 00:08:33",
+      "lat": -15.78,
+      "lng": -74.45,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0250"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0241",
+      "magnitud": 3.5,
+      "ubicacion": "24 km al NO de Jaén, Jaén - Cajamarca",
+      "fechaHora": "30/04/2026 08:28:29",
+      "lat": -5.52,
+      "lng": -78.92,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0241"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0242",
+      "magnitud": 4,
+      "ubicacion": "24 km al NE de Calango, Cañete - Lima",
+      "fechaHora": "01/05/2026 03:13:17",
+      "lat": -12.4,
+      "lng": -76.36,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0242"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0243",
+      "magnitud": 3.5,
+      "ubicacion": "16 km al S de Santa Lucía, Lampa - Puno",
+      "fechaHora": "01/05/2026 03:13:50",
+      "lat": -15.84,
+      "lng": -70.58,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0243"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0244",
+      "magnitud": 3.5,
+      "ubicacion": "12 km al E de Moquegua, Mariscal Nieto - Moquegua",
+      "fechaHora": "01/05/2026 04:33:34",
+      "lat": -17.23,
+      "lng": -70.83,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0244"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0245",
+      "magnitud": 4,
+      "ubicacion": "67 km al SO de Mollendo, Islay - Arequipa",
+      "fechaHora": "01/05/2026 18:51:54",
+      "lat": -17.34,
+      "lng": -72.55,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0245"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0236",
+      "magnitud": 4,
+      "ubicacion": "48 km al N de Curimaná, Padre Abad - Ucayali",
+      "fechaHora": "28/04/2026 16:02:26",
+      "lat": -8.06,
+      "lng": -75.3,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0236"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0237",
+      "magnitud": 4.8,
+      "ubicacion": "19 km al NO de Jaén, Jaén - Cajamarca",
+      "fechaHora": "",
+      "lat": -5.58,
+      "lng": -78.92,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0237"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0238",
+      "magnitud": 3.8,
+      "ubicacion": "25 km al S de Vitor, Arequipa - Arequipa",
+      "fechaHora": "29/04/2026 21:56:15",
+      "lat": -16.69,
+      "lng": -71.89,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0238"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0239",
+      "magnitud": 4,
+      "ubicacion": "22 km al E de Tarapoto, San Martín - San Martín",
+      "fechaHora": "30/04/2026 05:50:17",
+      "lat": -6.54,
+      "lng": -76.17,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0239"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0240",
+      "magnitud": 4.4,
+      "ubicacion": "21 km al E de Sina, San Antonio de Putina - Puno",
+      "fechaHora": "30/04/2026 07:36:42",
+      "lat": -14.46,
+      "lng": -69.09,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0240"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0231",
+      "magnitud": 4,
+      "ubicacion": "39 km al NE de Puerto Bermúdez, Oxapampa - Pasco",
+      "fechaHora": "26/04/2026 14:23:09",
+      "lat": -10,
+      "lng": -74.74,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0231"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0232",
+      "magnitud": 3.6,
+      "ubicacion": "23 km al NO de Aucayacu, Leoncio Prado - Huánuco",
+      "fechaHora": "27/04/2026 04:27:30",
+      "lat": -8.77,
+      "lng": -76.24,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0232"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0233",
+      "magnitud": 3.5,
+      "ubicacion": "9 km al SE de Cabanaconde, Caylloma - Arequipa",
+      "fechaHora": "27/04/2026 04:53:41",
+      "lat": -15.69,
+      "lng": -71.94,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0233"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0234",
+      "magnitud": 3.5,
+      "ubicacion": "24 km al NE de Panao, Pachitea - Huánuco",
+      "fechaHora": "27/04/2026 18:36:08",
+      "lat": -9.81,
+      "lng": -75.79,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0234"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0235",
+      "magnitud": 4,
+      "ubicacion": "50 km al O de Chuschi, Cangallo - Ayacucho",
+      "fechaHora": "28/04/2026 02:54:14",
+      "lat": -13.6,
+      "lng": -74.81,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0235"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0226",
+      "magnitud": 3.7,
+      "ubicacion": "20 km al NO de Cajamarca, Cajamarca - Cajamarca",
+      "fechaHora": "24/04/2026 02:04:04",
+      "lat": -7.06,
+      "lng": -78.67,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0226"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0227",
+      "magnitud": 3.7,
+      "ubicacion": "65 km al S de Ilo, Ilo - Moquegua",
+      "fechaHora": "24/04/2026 11:18:19",
+      "lat": -18.21,
+      "lng": -71.5,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0227"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0228",
+      "magnitud": 4.5,
+      "ubicacion": "53 km al N de Puerto Inca, Puerto Inca - Huánuco",
+      "fechaHora": "25/04/2026 04:53:40",
+      "lat": -8.9,
+      "lng": -74.96,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0228"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0229",
+      "magnitud": 5,
+      "ubicacion": "77 km al SO de Ica, Ica - Ica",
+      "fechaHora": "25/04/2026 15:14:40",
+      "lat": -14.5,
+      "lng": -76.28,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0229"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0230",
+      "magnitud": 4,
+      "ubicacion": "40 km al NE de Puerto Bermúdez, Oxapampa - Pasco",
+      "fechaHora": "25/04/2026 20:44:58",
+      "lat": -10.15,
+      "lng": -74.61,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0230"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0221",
+      "magnitud": 3.8,
+      "ubicacion": "25 km al SO de Locumba, Jorge Basadre - Tacna",
+      "fechaHora": "20/04/2026 23:13:46",
+      "lat": -17.74,
+      "lng": -70.96,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0221"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0222",
+      "magnitud": 4.9,
+      "ubicacion": "42 km al SO de Huasicancha, Huancayo - Junín",
+      "fechaHora": "21/04/2026 11:18:54",
+      "lat": -12.54,
+      "lng": -75.6,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0222"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0223",
+      "magnitud": 4,
+      "ubicacion": "28 km al SE de Sechura, Sechura - Piura",
+      "fechaHora": "21/04/2026 23:15:25",
+      "lat": -5.77,
+      "lng": -80.69,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0223"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0224",
+      "magnitud": 3.5,
+      "ubicacion": "50 km al S de Puerto Inca, Puerto Inca - Huánuco",
+      "fechaHora": "",
+      "lat": -9.82,
+      "lng": -74.91,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0224"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0225",
+      "magnitud": 3.5,
+      "ubicacion": "67 km al O de Chimbote, Santa - Áncash",
+      "fechaHora": "23/04/2026 04:11:42",
+      "lat": -9.01,
+      "lng": -79.19,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0225"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0216",
+      "magnitud": 4,
+      "ubicacion": "50 km al O de Barranca, Barranca - Lima",
+      "fechaHora": "19/04/2026 04:57:49",
+      "lat": -10.87,
+      "lng": -78.2,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0216"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0217",
+      "magnitud": 3.9,
+      "ubicacion": "43 km al S de Locumba, Jorge Basadre - Tacna",
+      "fechaHora": "19/04/2026 09:55:34",
+      "lat": -17.98,
+      "lng": -70.9,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0217"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0218",
+      "magnitud": 4.3,
+      "ubicacion": "37 km al E de Calana, Tacna - Tacna",
+      "fechaHora": "",
+      "lat": -18.07,
+      "lng": -69.86,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0218"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0219",
+      "magnitud": 4.3,
+      "ubicacion": "85 km al SO de Ica, Ica - Ica",
+      "fechaHora": "20/04/2026 17:42:44",
+      "lat": -14.47,
+      "lng": -76.4,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0219"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0220",
+      "magnitud": 4.5,
+      "ubicacion": "87 km al S de Pisco, Pisco - Ica",
+      "fechaHora": "20/04/2026 18:26:40",
+      "lat": -14.45,
+      "lng": -76.48,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0220"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0211",
+      "magnitud": 3.6,
+      "ubicacion": "48 km al SO de Quilca, Camaná - Arequipa",
+      "fechaHora": "16/04/2026 20:50:47",
+      "lat": -17.1,
+      "lng": -72.63,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0211"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0212",
+      "magnitud": 4,
+      "ubicacion": "85 km al S de Ilo, Ilo - Moquegua",
+      "fechaHora": "16/04/2026 22:54:26",
+      "lat": -18.41,
+      "lng": -71.42,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0212"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0213",
+      "magnitud": 3.5,
+      "ubicacion": "22 km al N de Quilca, Camaná - Arequipa",
+      "fechaHora": "18/04/2026 04:49:53",
+      "lat": -16.53,
+      "lng": -72.5,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0213"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0214",
+      "magnitud": 3.5,
+      "ubicacion": "25 km al O de Mollendo, Islay - Arequipa",
+      "fechaHora": "18/04/2026 05:58:46",
+      "lat": -16.98,
+      "lng": -72.25,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0214"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0215",
+      "magnitud": 4.5,
+      "ubicacion": "43 km al N de Pucallpa, Coronel Portillo - Ucayali",
+      "fechaHora": "18/04/2026 18:56:47",
+      "lat": -8.01,
+      "lng": -74.64,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0215"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0206",
+      "magnitud": 3.8,
+      "ubicacion": "13 km al E de Máncora, Talara - Piura",
+      "fechaHora": "14/04/2026 17:21:26",
+      "lat": -4.07,
+      "lng": -80.94,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0206"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0207",
+      "magnitud": 3.7,
+      "ubicacion": "47 km al O de Huacho, Huaura - Lima",
+      "fechaHora": "15/04/2026 08:40:56",
+      "lat": -11.1,
+      "lng": -78.04,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0207"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0208",
+      "magnitud": 4.9,
+      "ubicacion": "38 km al S de Moyobamba, Moyobamba - San Martín",
+      "fechaHora": "",
+      "lat": -6.36,
+      "lng": -76.87,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0208"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0209",
+      "magnitud": 5.1,
+      "ubicacion": "104 km al SO de Pisco, Pisco - Ica",
+      "fechaHora": "16/04/2026 03:09:02",
+      "lat": -14.48,
+      "lng": -76.77,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0209"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0210",
+      "magnitud": 3.7,
+      "ubicacion": "22 km al SE de Máncora, Talara - Piura",
+      "fechaHora": "16/04/2026 04:24:00",
+      "lat": -4.22,
+      "lng": -80.89,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0210"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0201",
+      "magnitud": 4,
+      "ubicacion": "11 km al O de Callao, Provincia Constitucional del Callao",
+      "fechaHora": "12/04/2026 12:12:44",
+      "lat": -12.08,
+      "lng": -77.21,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0201"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0202",
+      "magnitud": 3.5,
+      "ubicacion": "35 km al SO de Callao, Provincia Constitucional del Callao",
+      "fechaHora": "12/04/2026 19:29:28",
+      "lat": -12.32,
+      "lng": -77.27,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0202"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0203",
+      "magnitud": 3.5,
+      "ubicacion": "13 km al SO de Callao, Provincia Constitucional del Callao",
+      "fechaHora": "12/04/2026 23:40:42",
+      "lat": -12.15,
+      "lng": -77.18,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0203"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0204",
+      "magnitud": 4,
+      "ubicacion": "32 km al NO de Alto de la Alianza, Tacna - Tacna",
+      "fechaHora": "13/04/2026 15:42:51",
+      "lat": -17.8,
+      "lng": -70.48,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0204"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0205",
+      "magnitud": 4,
+      "ubicacion": "12 km al N de San Juan, Nasca - Ica",
+      "fechaHora": "13/04/2026 23:46:33",
+      "lat": -15.05,
+      "lng": -75.35,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0205"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0196",
+      "magnitud": 3.5,
+      "ubicacion": "22 km al SO de Chilca, Cañete - Lima",
+      "fechaHora": "09/04/2026 21:28:15",
+      "lat": -12.69,
+      "lng": -76.83,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0196"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0197",
+      "magnitud": 5,
+      "ubicacion": "29 km al O de Lancones, Sullana - Piura",
+      "fechaHora": "11/04/2026 08:44:09",
+      "lat": -4.57,
+      "lng": -80.8,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0197"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0198",
+      "magnitud": 4,
+      "ubicacion": "72 km al N de Zarumilla, Zarumilla - Tumbes",
+      "fechaHora": "11/04/2026 19:22:44",
+      "lat": -2.89,
+      "lng": -80.5,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0198"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0199",
+      "magnitud": 4,
+      "ubicacion": "71 km al SO de Samanco, Santa - Áncash",
+      "fechaHora": "12/04/2026 08:04:26",
+      "lat": -9.57,
+      "lng": -79.06,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0199"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0200",
+      "magnitud": 3.4,
+      "ubicacion": "20 km al NO de Chilca, Cañete - Lima",
+      "fechaHora": "12/04/2026 09:05:26",
+      "lat": -12.44,
+      "lng": -76.9,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0200"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0191",
+      "magnitud": 3.6,
+      "ubicacion": "36 km al NE de Canta, Canta - Lima",
+      "fechaHora": "05/04/2026 18:47:22",
+      "lat": -11.17,
+      "lng": -76.49,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0191"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0192",
+      "magnitud": 3.8,
+      "ubicacion": "15 km al S de Codo del Pozuzo, Puerto Inca - Huánuco",
+      "fechaHora": "06/04/2026 11:01:17",
+      "lat": -9.8,
+      "lng": -75.49,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0192"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0193",
+      "magnitud": 4,
+      "ubicacion": "54 km al S de Pimentel, Chiclayo - Lambayeque",
+      "fechaHora": "08/04/2026 02:55:07",
+      "lat": -7.32,
+      "lng": -80,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0193"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0194",
+      "magnitud": 3.8,
+      "ubicacion": "30 km al NE de Puquio, Lucanas - Ayacucho",
+      "fechaHora": "08/04/2026 03:29:03",
+      "lat": -14.54,
+      "lng": -73.89,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0194"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0195",
+      "magnitud": 4.9,
+      "ubicacion": "28 km al S de Mala, Cañete - Lima",
+      "fechaHora": "09/04/2026 18:57:47",
+      "lat": -12.89,
+      "lng": -76.73,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0195"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0186",
+      "magnitud": 3.8,
+      "ubicacion": "4 km al N de Callao, Provincia Constitucional del Callao",
+      "fechaHora": "03/04/2026 15:01:08",
+      "lat": -12.01,
+      "lng": -77.13,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0186"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0187",
+      "magnitud": 3.7,
+      "ubicacion": "30 km al NO de Zorritos, Contralmirante Villar - Tumbes",
+      "fechaHora": "04/04/2026 00:18:39",
+      "lat": -3.43,
+      "lng": -80.78,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0187"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0188",
+      "magnitud": 4.5,
+      "ubicacion": "115 km al S de Tacna, Tacna - Tacna",
+      "fechaHora": "04/04/2026 04:22:35",
+      "lat": -19.04,
+      "lng": -70.36,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0188"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0189",
+      "magnitud": 4.5,
+      "ubicacion": "132 km al N de Zarumilla, Zarumilla - Tumbes",
+      "fechaHora": "04/04/2026 07:23:27",
+      "lat": -2.31,
+      "lng": -80.33,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0189"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0190",
+      "magnitud": 3.6,
+      "ubicacion": "14 km al NO de Chala, Caravelí - Arequipa",
+      "fechaHora": "04/04/2026 09:39:40",
+      "lat": -15.76,
+      "lng": -74.32,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0190"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0181",
+      "magnitud": 4.1,
+      "ubicacion": "87 km al SO de Huacho, Huaura - Lima",
+      "fechaHora": "01/04/2026 07:09:16",
+      "lat": -11.76,
+      "lng": -78.04,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0181"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0182",
+      "magnitud": 3.5,
+      "ubicacion": "25 km al E de Langui, Canas - Cusco",
+      "fechaHora": "01/04/2026 09:29:14",
+      "lat": -14.52,
+      "lng": -71.06,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0182"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0183",
+      "magnitud": 4.3,
+      "ubicacion": "57 km al N de Lancones, Sullana - Piura",
+      "fechaHora": "02/04/2026 03:30:57",
+      "lat": -4.16,
+      "lng": -80.37,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0183"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0184",
+      "magnitud": 4.5,
+      "ubicacion": "8 km al NE de Pucallpa, Coronel Portillo - Ucayali",
+      "fechaHora": "02/04/2026 05:44:15",
+      "lat": -8.34,
+      "lng": -74.47,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0184"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0185",
+      "magnitud": 3.4,
+      "ubicacion": "21 km al SO de Mala, Cañete - Lima",
+      "fechaHora": "03/04/2026 12:25:55",
+      "lat": -12.73,
+      "lng": -76.81,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0185"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0176",
+      "magnitud": 3.6,
+      "ubicacion": "38 km al SE de Picota, Picota - San Martín",
+      "fechaHora": "30/03/2026 19:20:37",
+      "lat": -7.15,
+      "lng": -76.07,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0176"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0177",
+      "magnitud": 4.3,
+      "ubicacion": "34 km al S de Curimaná, Padre Abad - Ucayali",
+      "fechaHora": "30/03/2026 23:39:03",
+      "lat": -8.75,
+      "lng": -75.25,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0177"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0178",
+      "magnitud": 4.2,
+      "ubicacion": "41 km al O de Sechura, Sechura - Piura",
+      "fechaHora": "31/03/2026 18:30:24",
+      "lat": -5.48,
+      "lng": -81.19,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0178"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0179",
+      "magnitud": 4,
+      "ubicacion": "43 km al O de Huacho, Huaura - Lima",
+      "fechaHora": "31/03/2026 19:48:15",
+      "lat": -11.12,
+      "lng": -78,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0179"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0180",
+      "magnitud": 5.9,
+      "ubicacion": "19 km al S de Picota, Picota - San Martín",
+      "fechaHora": "01/04/2026 06:20:26",
+      "lat": -7.08,
+      "lng": -76.28,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0180"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0171",
+      "magnitud": 4.2,
+      "ubicacion": "42 km al SE de Tarata, Tarata - Tacna",
+      "fechaHora": "",
+      "lat": -17.73,
+      "lng": -69.74,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0171"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0172",
+      "magnitud": 4,
+      "ubicacion": "21 km al NO de Jaén, Jaén - Cajamarca",
+      "fechaHora": "28/03/2026 02:30:44",
+      "lat": -5.56,
+      "lng": -78.93,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0172"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0173",
+      "magnitud": 4,
+      "ubicacion": "44 km al S de Camaná, Camaná - Arequipa",
+      "fechaHora": "28/03/2026 08:18:49",
+      "lat": -17.01,
+      "lng": -72.81,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0173"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0174",
+      "magnitud": 4.2,
+      "ubicacion": "21 km al S de Tingo María, Leoncio Prado - Huánuco",
+      "fechaHora": "28/03/2026 23:05:11",
+      "lat": -9.47,
+      "lng": -75.95,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0174"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0175",
+      "magnitud": 3.4,
+      "ubicacion": "28 km al O de Chilca, Cañete - Lima",
+      "fechaHora": "29/03/2026 12:49:32",
+      "lat": -12.61,
+      "lng": -76.98,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0175"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0166",
+      "magnitud": 4.7,
+      "ubicacion": "80 km al SO de Ica, Ica - Ica",
+      "fechaHora": "24/03/2026 11:16:26",
+      "lat": -14.58,
+      "lng": -76.25,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0166"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0167",
+      "magnitud": 3.5,
+      "ubicacion": "19 km al SO de Callao, Provincia Constitucional del Callao",
+      "fechaHora": "24/03/2026 21:21:08",
+      "lat": -12.16,
+      "lng": -77.25,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0167"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0168",
+      "magnitud": 3.7,
+      "ubicacion": "61 km al S de Huacho, Huaura - Lima",
+      "fechaHora": "26/03/2026 00:32:54",
+      "lat": -11.64,
+      "lng": -77.75,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0168"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0169",
+      "magnitud": 4.2,
+      "ubicacion": "55 km al SO de Andoas, Datem del Marañón - Loreto",
+      "fechaHora": "26/03/2026 00:40:50",
+      "lat": -3.92,
+      "lng": -76.65,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0169"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0170",
+      "magnitud": 4,
+      "ubicacion": "36 km al SO de Atico, Caravelí - Arequipa",
+      "fechaHora": "27/03/2026 10:41:36",
+      "lat": -16.46,
+      "lng": -73.83,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0170"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0161",
+      "magnitud": 4.8,
+      "ubicacion": "32 km al SO de Zorritos, Contralmirante Villar - Tumbes",
+      "fechaHora": "23/03/2026 02:18:43",
+      "lat": -3.9,
+      "lng": -80.83,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0161"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0162",
+      "magnitud": 4,
+      "ubicacion": "19 km al NE de Chalhuanca, Aymaraes - Apurímac",
+      "fechaHora": "23/03/2026 02:33:25",
+      "lat": -14.19,
+      "lng": -73.1,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0162"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0163",
+      "magnitud": 4.3,
+      "ubicacion": "39 km al N de Zarumilla, Zarumilla - Tumbes",
+      "fechaHora": "23/03/2026 12:46:03",
+      "lat": -3.17,
+      "lng": -80.15,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0163"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0164",
+      "magnitud": 4.7,
+      "ubicacion": "90 km al O de San Pedro de Lloc, Pacasmayo - La Libertad",
+      "fechaHora": "24/03/2026 06:39:23",
+      "lat": -7.62,
+      "lng": -80.3,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0164"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0165",
+      "magnitud": 4.2,
+      "ubicacion": "47 km al NE de Cotahuasi, La Unión - Arequipa",
+      "fechaHora": "24/03/2026 10:36:44",
+      "lat": -14.96,
+      "lng": -72.54,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0165"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0156",
+      "magnitud": 3.8,
+      "ubicacion": "93 km al SO de Tacna, Tacna - Tacna",
+      "fechaHora": "20/03/2026 18:04:12",
+      "lat": -18.45,
+      "lng": -71,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0156"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0157",
+      "magnitud": 3.5,
+      "ubicacion": "8 km al S de Chilca, Cañete - Lima",
+      "fechaHora": "20/03/2026 20:11:55",
+      "lat": -12.59,
+      "lng": -76.75,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0157"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0158",
+      "magnitud": 4.4,
+      "ubicacion": "53 km al E de Calana, Tacna - Tacna",
+      "fechaHora": "22/03/2026 03:02:54",
+      "lat": -17.86,
+      "lng": -69.69,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0158"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0159",
+      "magnitud": 3.5,
+      "ubicacion": "25 km al SO de Chilca, Cañete - Lima",
+      "fechaHora": "22/03/2026 06:03:20",
+      "lat": -12.68,
+      "lng": -76.9,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0159"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0160",
+      "magnitud": 3.5,
+      "ubicacion": "13 km al NO de Pisco, Pisco - Ica",
+      "fechaHora": "22/03/2026 06:36:49",
+      "lat": -13.62,
+      "lng": -76.29,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0160"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0151",
+      "magnitud": 3.7,
+      "ubicacion": "29 km al O de Codo del Pozuzo, Puerto Inca - Huánuco",
+      "fechaHora": "19/03/2026 21:49:29",
+      "lat": -9.62,
+      "lng": -75.71,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0151"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0152",
+      "magnitud": 3.7,
+      "ubicacion": "9 km al NE de Lima, Lima - Lima",
+      "fechaHora": "19/03/2026 23:00:37",
+      "lat": -12.01,
+      "lng": -76.96,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0152"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0153",
+      "magnitud": 4.9,
+      "ubicacion": "65 km al SO de Marcona, Nasca - Ica",
+      "fechaHora": "20/03/2026 00:30:08",
+      "lat": -15.8,
+      "lng": -75.57,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0153"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0154",
+      "magnitud": 3.8,
+      "ubicacion": "8 km al NO de Codo del Pozuzo, Puerto Inca - Huánuco",
+      "fechaHora": "20/03/2026 11:59:56",
+      "lat": -9.63,
+      "lng": -75.51,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0154"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0155",
+      "magnitud": 4.8,
+      "ubicacion": "227 km al S de Tacna, Tacna - Tacna",
+      "fechaHora": "20/03/2026 15:06:52",
+      "lat": -19.92,
+      "lng": -71.02,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0155"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0146",
+      "magnitud": 3.7,
+      "ubicacion": "18 km al SO de Chilca, Cañete - Lima",
+      "fechaHora": "17/03/2026 07:03:12",
+      "lat": -12.65,
+      "lng": -76.83,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0146"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0147",
+      "magnitud": 4,
+      "ubicacion": "28 km al S de Ica, Ica - Ica",
+      "fechaHora": "17/03/2026 19:21:33",
+      "lat": -14.31,
+      "lng": -75.79,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0147"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0148",
+      "magnitud": 3.7,
+      "ubicacion": "15 km al SO de Chilca, Cañete - Lima",
+      "fechaHora": "18/03/2026 07:20:06",
+      "lat": -12.63,
+      "lng": -76.82,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0148"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0149",
+      "magnitud": 3.6,
+      "ubicacion": "15 km al SO de Chilca, Cañete - Lima",
+      "fechaHora": "",
+      "lat": -12.63,
+      "lng": -76.82,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0149"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0150",
+      "magnitud": 3.5,
+      "ubicacion": "19 km al SO de Chilca, Cañete - Lima",
+      "fechaHora": "19/03/2026 03:27:47",
+      "lat": -12.65,
+      "lng": -76.85,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0150"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0141",
+      "magnitud": 4.3,
+      "ubicacion": "55 km al E de Puerto Bermúdez, Oxapampa - Pasco",
+      "fechaHora": "16/03/2026 04:19:03",
+      "lat": -10.41,
+      "lng": -74.45,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0141"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0142",
+      "magnitud": 4,
+      "ubicacion": "3 km al NE de Chala, Caravelí - Arequipa",
+      "fechaHora": "16/03/2026 06:36:26",
+      "lat": -15.84,
+      "lng": -74.23,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0142"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0143",
+      "magnitud": 3.8,
+      "ubicacion": "32 km al SO de Pucallpa, Coronel Portillo - Ucayali",
+      "fechaHora": "16/03/2026 11:49:49",
+      "lat": -8.57,
+      "lng": -74.75,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0143"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0144",
+      "magnitud": 4,
+      "ubicacion": "56 km al NO de Pastaza, Datem del Marañón - Loreto",
+      "fechaHora": "16/03/2026 14:25:30",
+      "lat": -4.35,
+      "lng": -76.99,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0144"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0145",
+      "magnitud": 3.5,
+      "ubicacion": "21 km al NO de Jaén, Jaén - Cajamarca",
+      "fechaHora": "16/03/2026 18:43:34",
+      "lat": -5.55,
+      "lng": -78.91,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0145"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0136",
+      "magnitud": 3.5,
+      "ubicacion": "5 km al SE de Chilca, Cañete - Lima",
+      "fechaHora": "11/03/2026 11:12:10",
+      "lat": -12.54,
+      "lng": -76.7,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0136"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0137",
+      "magnitud": 4.1,
+      "ubicacion": "70 km al O de Chilca, Cañete - Lima",
+      "fechaHora": "11/03/2026 17:00:29",
+      "lat": -12.69,
+      "lng": -77.36,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0137"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0138",
+      "magnitud": 4.9,
+      "ubicacion": "25 km al S de Coporaque, Espinar - Cusco",
+      "fechaHora": "11/03/2026 23:41:05",
+      "lat": -15.02,
+      "lng": -71.5,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0138"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0139",
+      "magnitud": 4,
+      "ubicacion": "40 km al NE de Aucayacu, Leoncio Prado - Huánuco",
+      "fechaHora": "13/03/2026 06:12:42",
+      "lat": -8.73,
+      "lng": -75.82,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0139"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0140",
+      "magnitud": 4.1,
+      "ubicacion": "44 km al SO de Pucallpa, Coronel Portillo - Ucayali",
+      "fechaHora": "13/03/2026 09:22:30",
+      "lat": -8.68,
+      "lng": -74.79,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0140"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0131",
+      "magnitud": 4.3,
+      "ubicacion": "21 km al S de Moyobamba, Moyobamba - San Martín",
+      "fechaHora": "09/03/2026 06:11:22",
+      "lat": -6.22,
+      "lng": -76.98,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0131"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0132",
+      "magnitud": 4.3,
+      "ubicacion": "67 km al SE de Tacna, Tacna - Tacna",
+      "fechaHora": "09/03/2026 10:41:39",
+      "lat": -18.49,
+      "lng": -69.87,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0132"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0133",
+      "magnitud": 3.5,
+      "ubicacion": "23 km al NO de Jaén, Jaén - Cajamarca",
+      "fechaHora": "10/03/2026 15:50:54",
+      "lat": -5.53,
+      "lng": -78.91,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0133"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0134",
+      "magnitud": 4.3,
+      "ubicacion": "50 km al SE de Contamana, Ucayali - Loreto",
+      "fechaHora": "10/03/2026 19:38:42",
+      "lat": -7.75,
+      "lng": -74.8,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0134"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0135",
+      "magnitud": 3.6,
+      "ubicacion": "40 km al NO de Lancones, Sullana - Piura",
+      "fechaHora": "11/03/2026 05:27:28",
+      "lat": -4.49,
+      "lng": -80.88,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0135"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0126",
+      "magnitud": 3.8,
+      "ubicacion": "19 km al SO de Sechura, Sechura - Piura",
+      "fechaHora": "08/03/2026 06:55:11",
+      "lat": -5.68,
+      "lng": -80.94,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0126"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0127",
+      "magnitud": 3.5,
+      "ubicacion": "9 km al N de Chuschi, Cangallo - Ayacucho",
+      "fechaHora": "",
+      "lat": -13.51,
+      "lng": -74.38,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0127"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0128",
+      "magnitud": 3.8,
+      "ubicacion": "48 km al O de Chilca, Cañete - Lima",
+      "fechaHora": "08/03/2026 14:11:41",
+      "lat": -12.58,
+      "lng": -77.18,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0128"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0129",
+      "magnitud": 4.9,
+      "ubicacion": "27 km al SE de Rioja, Rioja - San Martín",
+      "fechaHora": "08/03/2026 17:02:15",
+      "lat": -6.28,
+      "lng": -77.05,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0129"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0130",
+      "magnitud": 4,
+      "ubicacion": "24 km al S de Moyobamba, Moyobamba - San Martín",
+      "fechaHora": "08/03/2026 17:04:17",
+      "lat": -6.24,
+      "lng": -77.02,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0130"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0121",
+      "magnitud": 4,
+      "ubicacion": "61 km al SO de Lomas, Caravelí - Arequipa",
+      "fechaHora": "06/03/2026 19:28:15",
+      "lat": -15.99,
+      "lng": -75.21,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0121"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0122",
+      "magnitud": 3.6,
+      "ubicacion": "6 km al SE de Chuschi, Cangallo - Ayacucho",
+      "fechaHora": "07/03/2026 10:05:17",
+      "lat": -13.61,
+      "lng": -74.3,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0122"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0123",
+      "magnitud": 4.8,
+      "ubicacion": "22 km al NO de Jaén, Jaén - Cajamarca",
+      "fechaHora": "07/03/2026 11:36:07",
+      "lat": -5.55,
+      "lng": -78.93,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0123"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0124",
+      "magnitud": 4.9,
+      "ubicacion": "22 km al NO de Jaén, Jaén - Cajamarca",
+      "fechaHora": "",
+      "lat": -5.55,
+      "lng": -78.93,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0124"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0125",
+      "magnitud": 4.1,
+      "ubicacion": "20 km al NO de Jaén, Jaén - Cajamarca",
+      "fechaHora": "07/03/2026 15:31:42",
+      "lat": -5.56,
+      "lng": -78.91,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0125"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0116",
+      "magnitud": 3.5,
+      "ubicacion": "12 km al NE de Ocoña, Camaná - Arequipa",
+      "fechaHora": "05/03/2026 03:53:45",
+      "lat": -16.36,
+      "lng": -73.02,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0116"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0117",
+      "magnitud": 3.4,
+      "ubicacion": "23 km al SO de Chilca, Cañete - Lima",
+      "fechaHora": "05/03/2026 07:06:15",
+      "lat": -12.7,
+      "lng": -76.84,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0117"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0118",
+      "magnitud": 3.7,
+      "ubicacion": "77 km al SO de Pampa Hermosa, Ucayali - Loreto",
+      "fechaHora": "05/03/2026 16:08:34",
+      "lat": -7.73,
+      "lng": -75.74,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0118"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0119",
+      "magnitud": 4.8,
+      "ubicacion": "46 km al O de Pastaza, Datem del Marañón - Loreto",
+      "fechaHora": "05/03/2026 20:40:23",
+      "lat": -4.56,
+      "lng": -76.99,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0119"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0120",
+      "magnitud": 3.9,
+      "ubicacion": "40 km al SO de Lomas, Caravelí - Arequipa",
+      "fechaHora": "06/03/2026 15:00:35",
+      "lat": -15.81,
+      "lng": -75.13,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0120"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0111",
+      "magnitud": 4.2,
+      "ubicacion": "36 km al SE de Calana, Tacna - Tacna",
+      "fechaHora": "01/03/2026 12:19:09",
+      "lat": -18.17,
+      "lng": -69.95,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0111"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0112",
+      "magnitud": 4.1,
+      "ubicacion": "8 km al E de Sechura, Sechura - Piura",
+      "fechaHora": "01/03/2026 15:05:58",
+      "lat": -5.55,
+      "lng": -80.75,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0112"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0113",
+      "magnitud": 4.5,
+      "ubicacion": "20 km al E de Máncora, Talara - Piura",
+      "fechaHora": "03/03/2026 23:14:22",
+      "lat": -4.12,
+      "lng": -80.87,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0113"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0114",
+      "magnitud": 3.5,
+      "ubicacion": "11 km al SE de Chilca, Cañete - Lima",
+      "fechaHora": "04/03/2026 00:46:28",
+      "lat": -12.56,
+      "lng": -76.65,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0114"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0115",
+      "magnitud": 3.5,
+      "ubicacion": "12 km al E de Querobamba, Sucre - Ayacucho",
+      "fechaHora": "04/03/2026 17:45:09",
+      "lat": -14.05,
+      "lng": -73.73,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0115"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0106",
+      "magnitud": 3.5,
+      "ubicacion": "23 km al O de Mala, Cañete - Lima",
+      "fechaHora": "26/02/2026 18:48:33",
+      "lat": -12.71,
+      "lng": -76.84,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0106"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0107",
+      "magnitud": 3.4,
+      "ubicacion": "56 km al SO de Chilca, Cañete - Lima",
+      "fechaHora": "26/02/2026 23:47:29",
+      "lat": -12.81,
+      "lng": -77.16,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0107"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0108",
+      "magnitud": 3.6,
+      "ubicacion": "61 km al SO de Huacho, Huaura - Lima",
+      "fechaHora": "27/02/2026 03:30:39",
+      "lat": -11.37,
+      "lng": -78.1,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0108"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0109",
+      "magnitud": 3.5,
+      "ubicacion": "13 km al SE de Querobamba, Sucre - Ayacucho",
+      "fechaHora": "27/02/2026 08:01:47",
+      "lat": -14.07,
+      "lng": -73.73,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0109"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0110",
+      "magnitud": 4.2,
+      "ubicacion": "86 km al O de Andoas, Datem del Marañón - Loreto",
+      "fechaHora": "27/02/2026 23:28:12",
+      "lat": -3.62,
+      "lng": -77.2,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0110"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0101",
+      "magnitud": 4,
+      "ubicacion": "9 km al SE de Chincha Alta, Chincha - Ica",
+      "fechaHora": "25/02/2026 02:02:52",
+      "lat": -13.49,
+      "lng": -76.09,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0101"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0102",
+      "magnitud": 4.2,
+      "ubicacion": "30 km al NO de Codo del Pozuzo, Puerto Inca - Huánuco",
+      "fechaHora": "25/02/2026 23:01:36",
+      "lat": -9.45,
+      "lng": -75.61,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0102"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0103",
+      "magnitud": 4.1,
+      "ubicacion": "23 km al E de Pucallpa, Coronel Portillo - Ucayali",
+      "fechaHora": "",
+      "lat": -8.32,
+      "lng": -74.33,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0103"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0104",
+      "magnitud": 3.7,
+      "ubicacion": "22 km al SE de Chincha Alta, Chincha - Ica",
+      "fechaHora": "26/02/2026 02:23:17",
+      "lat": -13.57,
+      "lng": -76,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0104"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0105",
+      "magnitud": 5,
+      "ubicacion": "36 km al O de Chilca, Cañete - Lima",
+      "fechaHora": "26/02/2026 18:21:08",
+      "lat": -12.44,
+      "lng": -77.06,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0105"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0096",
+      "magnitud": 4.9,
+      "ubicacion": "15 km al NE de Pastaza, Datem del Marañón - Loreto",
+      "fechaHora": "",
+      "lat": -4.58,
+      "lng": -76.47,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0096"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0097",
+      "magnitud": 3.5,
+      "ubicacion": "43 km al N de Puerto Bermúdez, Oxapampa - Pasco",
+      "fechaHora": "22/02/2026 08:56:58",
+      "lat": -9.92,
+      "lng": -75.03,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0097"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0098",
+      "magnitud": 4.3,
+      "ubicacion": "53 km al SO de Lomas, Caravelí - Arequipa",
+      "fechaHora": "",
+      "lat": -15.83,
+      "lng": -75.27,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0098"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0099",
+      "magnitud": 3.8,
+      "ubicacion": "33 km al S de Chala, Caravelí - Arequipa",
+      "fechaHora": "22/02/2026 14:07:43",
+      "lat": -16.16,
+      "lng": -74.27,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0099"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0100",
+      "magnitud": 5.1,
+      "ubicacion": "82 km al O de Pisco, Pisco - Ica",
+      "fechaHora": "22/02/2026 17:36:14",
+      "lat": -13.59,
+      "lng": -76.96,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0100"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0091",
+      "magnitud": 3.9,
+      "ubicacion": "39 km al SO de Mala, Cañete - Lima",
+      "fechaHora": "19/02/2026 00:35:08",
+      "lat": -12.84,
+      "lng": -76.94,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0091"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0092",
+      "magnitud": 4,
+      "ubicacion": "69 km al O de Chimbote, Santa - Áncash",
+      "fechaHora": "19/02/2026 08:45:41",
+      "lat": -9.11,
+      "lng": -79.21,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0092"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0093",
+      "magnitud": 4,
+      "ubicacion": "43 km al N de Lancones, Sullana - Piura",
+      "fechaHora": "19/02/2026 12:46:47",
+      "lat": -4.27,
+      "lng": -80.43,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0093"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0094",
+      "magnitud": 4,
+      "ubicacion": "32 km al NO de Vitor, Arequipa - Arequipa",
+      "fechaHora": "",
+      "lat": -16.29,
+      "lng": -72.17,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0094"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0095",
+      "magnitud": 3.6,
+      "ubicacion": "25 km al SO de Huasicancha, Huancayo - Junín",
+      "fechaHora": "20/02/2026 17:28:52",
+      "lat": -12.44,
+      "lng": -75.48,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0095"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0086",
+      "magnitud": 4.1,
+      "ubicacion": "134 km al O de Trujillo, Trujillo - La Libertad",
+      "fechaHora": "16/02/2026 02:19:10",
+      "lat": -8.46,
+      "lng": -80.19,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0086"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0087",
+      "magnitud": 4.2,
+      "ubicacion": "22 km al S de Colcabamba, Tayacaja - Huancavelica",
+      "fechaHora": "17/02/2026 09:16:26",
+      "lat": -12.61,
+      "lng": -74.69,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0087"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0088",
+      "magnitud": 4.5,
+      "ubicacion": "59 km al SO de Ocoña, Camaná - Arequipa",
+      "fechaHora": "17/02/2026 21:22:54",
+      "lat": -16.88,
+      "lng": -73.4,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0088"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0089",
+      "magnitud": 3.5,
+      "ubicacion": "25 km al S de Mala, Cañete - Lima",
+      "fechaHora": "18/02/2026 06:53:19",
+      "lat": -12.88,
+      "lng": -76.67,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0089"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0090",
+      "magnitud": 4.1,
+      "ubicacion": "9 km al N de Talara, Talara - Piura",
+      "fechaHora": "18/02/2026 08:27:52",
+      "lat": -4.5,
+      "lng": -81.3,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0090"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0081",
+      "magnitud": 4.7,
+      "ubicacion": "10 km al SO de Yura, Arequipa - Arequipa",
+      "fechaHora": "",
+      "lat": -16.33,
+      "lng": -71.73,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0081"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0082",
+      "magnitud": 4.2,
+      "ubicacion": "57 km al SE de Calana, Tacna - Tacna",
+      "fechaHora": "15/02/2026 04:14:50",
+      "lat": -18.26,
+      "lng": -69.76,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0082"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0083",
+      "magnitud": 3.4,
+      "ubicacion": "18 km al E de Abancay, Abancay - Apurímac",
+      "fechaHora": "15/02/2026 06:32:33",
+      "lat": -13.68,
+      "lng": -72.72,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0083"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0084",
+      "magnitud": 4.2,
+      "ubicacion": "21 km al SO de Aguaytía, Padre Abad - Ucayali",
+      "fechaHora": "15/02/2026 19:53:17",
+      "lat": -9.2,
+      "lng": -75.6,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0084"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0085",
+      "magnitud": 3.7,
+      "ubicacion": "33 km al NE de Punta de Bombón, Islay - Arequipa",
+      "fechaHora": "15/02/2026 22:59:27",
+      "lat": -17.02,
+      "lng": -71.53,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0085"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0076",
+      "magnitud": 3.5,
+      "ubicacion": "9 km al O de Huaral, Huaral - Lima",
+      "fechaHora": "",
+      "lat": -11.49,
+      "lng": -77.29,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0076"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0077",
+      "magnitud": 3.5,
+      "ubicacion": "10 km al NE de Zarumilla, Zarumilla - Tumbes",
+      "fechaHora": "11/02/2026 05:46:13",
+      "lat": -3.43,
+      "lng": -80.21,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0077"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0078",
+      "magnitud": 4.8,
+      "ubicacion": "181 km al NO de Andoas, Datem del Marañón - Loreto",
+      "fechaHora": "12/02/2026 16:52:54",
+      "lat": -2.45,
+      "lng": -77.7,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0078"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0079",
+      "magnitud": 4.2,
+      "ubicacion": "58 km al S de Huacho, Huaura - Lima",
+      "fechaHora": "14/02/2026 09:15:29",
+      "lat": -11.61,
+      "lng": -77.75,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0079"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0080",
+      "magnitud": 3.8,
+      "ubicacion": "55 km al S de Lomas, Caravelí - Arequipa",
+      "fechaHora": "14/02/2026 21:14:05",
+      "lat": -16.04,
+      "lng": -75.02,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0080"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0071",
+      "magnitud": 3.6,
+      "ubicacion": "5 km al NO de Quillabamba, La Convención - Cusco",
+      "fechaHora": "08/02/2026 23:02:29",
+      "lat": -12.83,
+      "lng": -72.73,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0071"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0072",
+      "magnitud": 3.9,
+      "ubicacion": "41 km al S de Camaná, Camaná - Arequipa",
+      "fechaHora": "09/02/2026 18:10:09",
+      "lat": -16.99,
+      "lng": -72.77,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0072"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0073",
+      "magnitud": 4.4,
+      "ubicacion": "78 km al O de Chimbote, Santa - Áncash",
+      "fechaHora": "10/02/2026 18:11:46",
+      "lat": -9.23,
+      "lng": -79.27,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0073"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0074",
+      "magnitud": 4.6,
+      "ubicacion": "69 km al NE de San Gabán, Carabaya - Puno",
+      "fechaHora": "10/02/2026 19:51:46",
+      "lat": -12.88,
+      "lng": -70.13,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0074"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0075",
+      "magnitud": 4.2,
+      "ubicacion": "39 km al NE de Coracora, Parinacochas - Ayacucho",
+      "fechaHora": "11/02/2026 00:03:10",
+      "lat": -14.7,
+      "lng": -73.63,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0075"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0066",
+      "magnitud": 4,
+      "ubicacion": "25 km al O de Pullo, Parinacochas - Ayacucho",
+      "fechaHora": "05/02/2026 15:56:34",
+      "lat": -15.2,
+      "lng": -74.06,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0066"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0067",
+      "magnitud": 3.8,
+      "ubicacion": "55 km al SE de La Unión, Piura - Piura",
+      "fechaHora": "05/02/2026 16:32:23",
+      "lat": -5.62,
+      "lng": -80.3,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0067"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0068",
+      "magnitud": 4.1,
+      "ubicacion": "65 km al NE de Andoas, Datem del Marañón - Loreto",
+      "fechaHora": "05/02/2026 19:40:41",
+      "lat": -3.2,
+      "lng": -75.92,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0068"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0069",
+      "magnitud": 3.5,
+      "ubicacion": "3 km al SO de Coporaque, Caylloma - Arequipa",
+      "fechaHora": "07/02/2026 12:28:59",
+      "lat": -15.65,
+      "lng": -71.66,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0069"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0070",
+      "magnitud": 4,
+      "ubicacion": "37 km al SO de Puquio, Lucanas - Ayacucho",
+      "fechaHora": "08/02/2026 08:10:18",
+      "lat": -14.93,
+      "lng": -74.36,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0070"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0061",
+      "magnitud": 4,
+      "ubicacion": "36 km al SE de Curimaná, Padre Abad - Ucayali",
+      "fechaHora": "03/02/2026 12:29:53",
+      "lat": -8.73,
+      "lng": -74.97,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0061"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0062",
+      "magnitud": 3.7,
+      "ubicacion": "25 km al O de Codo del Pozuzo, Puerto Inca - Huánuco",
+      "fechaHora": "04/02/2026 19:20:04",
+      "lat": -9.75,
+      "lng": -75.67,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0062"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0063",
+      "magnitud": 3.8,
+      "ubicacion": "12 km al E de Pisco, Pisco - Ica",
+      "fechaHora": "05/02/2026 00:30:03",
+      "lat": -13.67,
+      "lng": -76.11,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0063"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0064",
+      "magnitud": 4,
+      "ubicacion": "7 km al N de Satipo, Satipo - Junín",
+      "fechaHora": "05/02/2026 06:07:38",
+      "lat": -11.19,
+      "lng": -74.66,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0064"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0065",
+      "magnitud": 4,
+      "ubicacion": "16 km al O de Atalaya, Atalaya - Ucayali",
+      "fechaHora": "",
+      "lat": -10.73,
+      "lng": -73.9,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0065"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0056",
+      "magnitud": 5,
+      "ubicacion": "50 km al S de Marcona, Nasca - Ica",
+      "fechaHora": "30/01/2026 20:09:13",
+      "lat": -15.78,
+      "lng": -75.33,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0056"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0057",
+      "magnitud": 4,
+      "ubicacion": "68 km al O de Huacho, Huaura - Lima",
+      "fechaHora": "31/01/2026 16:28:11",
+      "lat": -11.34,
+      "lng": -78.18,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0057"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0058",
+      "magnitud": 4,
+      "ubicacion": "49 km al NE de Chachas, Castilla - Arequipa",
+      "fechaHora": "02/02/2026 08:04:26",
+      "lat": -15.14,
+      "lng": -72,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0058"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0059",
+      "magnitud": 3.7,
+      "ubicacion": "69 km al SO de Casma, Casma - Áncash",
+      "fechaHora": "02/02/2026 20:34:27",
+      "lat": -9.88,
+      "lng": -78.78,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0059"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0060",
+      "magnitud": 4,
+      "ubicacion": "26 km al NO de Santa Lucía, Lampa - Puno",
+      "fechaHora": "02/02/2026 21:08:16",
+      "lat": -15.49,
+      "lng": -70.71,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0060"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0051",
+      "magnitud": 4.8,
+      "ubicacion": "47 km al SO de Pucallpa, Coronel Portillo - Ucayali",
+      "fechaHora": "25/01/2026 15:29:02",
+      "lat": -8.72,
+      "lng": -74.79,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0051"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0052",
+      "magnitud": 3.8,
+      "ubicacion": "32 km al N de Satipo, Satipo - Junín",
+      "fechaHora": "28/01/2026 11:34:39",
+      "lat": -10.98,
+      "lng": -74.54,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0052"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0053",
+      "magnitud": 4.9,
+      "ubicacion": "50 km al SO de Marcona, Nasca - Ica",
+      "fechaHora": "29/01/2026 02:51:06",
+      "lat": -15.73,
+      "lng": -75.43,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0053"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0054",
+      "magnitud": 3.9,
+      "ubicacion": "17 km al NE de Mollendo, Islay - Arequipa",
+      "fechaHora": "29/01/2026 19:53:20",
+      "lat": -16.9,
+      "lng": -71.93,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0054"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0055",
+      "magnitud": 4.1,
+      "ubicacion": "49 km al S de Marcona, Nasca - Ica",
+      "fechaHora": "30/01/2026 19:34:55",
+      "lat": -15.79,
+      "lng": -75.27,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0055"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0046",
+      "magnitud": 3.7,
+      "ubicacion": "33 km al E de Máncora, Talara - Piura",
+      "fechaHora": "21/01/2026 05:35:09",
+      "lat": -4.07,
+      "lng": -80.76,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0046"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0047",
+      "magnitud": 3.9,
+      "ubicacion": "33 km al SO de Querobamba, Sucre - Ayacucho",
+      "fechaHora": "21/01/2026 14:17:32",
+      "lat": -14.29,
+      "lng": -73.96,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0047"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0048",
+      "magnitud": 3.5,
+      "ubicacion": "67 km al O de Chimbote, Santa - Áncash",
+      "fechaHora": "21/01/2026 17:28:03",
+      "lat": -9.09,
+      "lng": -79.19,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0048"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0049",
+      "magnitud": 4,
+      "ubicacion": "53 km al O de Atico, Caravelí - Arequipa",
+      "fechaHora": "23/01/2026 07:20:36",
+      "lat": -16.38,
+      "lng": -74.09,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0049"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0050",
+      "magnitud": 4.2,
+      "ubicacion": "90 km al SO de Pisco, Pisco - Ica",
+      "fechaHora": "23/01/2026 20:20:41",
+      "lat": -14.34,
+      "lng": -76.74,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0050"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0041",
+      "magnitud": 4.1,
+      "ubicacion": "21 km al O de Santa María de Nieva, Condorcanqui - Amazonas",
+      "fechaHora": "16/01/2026 16:15:04",
+      "lat": -4.57,
+      "lng": -78.06,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0041"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0042",
+      "magnitud": 3.8,
+      "ubicacion": "34 km al O de Chilca, Cañete - Lima",
+      "fechaHora": "17/01/2026 03:12:32",
+      "lat": -12.42,
+      "lng": -77.03,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0042"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0043",
+      "magnitud": 4,
+      "ubicacion": "10 km al O de Yauca, Caravelí - Arequipa",
+      "fechaHora": "18/01/2026 20:43:58",
+      "lat": -15.64,
+      "lng": -74.62,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0043"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0044",
+      "magnitud": 3.5,
+      "ubicacion": "16 km al SO de Cajabamba, Cajabamba - Cajamarca",
+      "fechaHora": "19/01/2026 15:46:11",
+      "lat": -7.7,
+      "lng": -78.17,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0044"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0045",
+      "magnitud": 4,
+      "ubicacion": "20 km al N de Marcona, Nasca - Ica",
+      "fechaHora": "20/01/2026 02:37:05",
+      "lat": -15.18,
+      "lng": -75.15,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0045"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0036",
+      "magnitud": 3.6,
+      "ubicacion": "74 km al O de Chimbote, Santa - Áncash",
+      "fechaHora": "14/01/2026 10:57:41",
+      "lat": -9.07,
+      "lng": -79.26,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0036"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0037",
+      "magnitud": 4,
+      "ubicacion": "12 km al O de Pomabamba, Pomabamba - Áncash",
+      "fechaHora": "14/01/2026 22:22:04",
+      "lat": -8.8,
+      "lng": -77.57,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0037"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0038",
+      "magnitud": 4.3,
+      "ubicacion": "22 km al SO de Cotahuasi, La Unión - Arequipa",
+      "fechaHora": "",
+      "lat": -15.36,
+      "lng": -73.02,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0038"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0039",
+      "magnitud": 4.3,
+      "ubicacion": "25 km al E de Pisco, Pisco - Ica",
+      "fechaHora": "15/01/2026 22:46:47",
+      "lat": -13.69,
+      "lng": -75.99,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0039"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0040",
+      "magnitud": 4.5,
+      "ubicacion": "33 km al NO de Alto de la Alianza, Tacna - Tacna",
+      "fechaHora": "16/01/2026 02:34:39",
+      "lat": -17.77,
+      "lng": -70.46,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0040"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0031",
+      "magnitud": 4.1,
+      "ubicacion": "20 km al O de Sullana, Sullana - Piura",
+      "fechaHora": "12/01/2026 21:55:12",
+      "lat": -4.87,
+      "lng": -80.87,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0031"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0032",
+      "magnitud": 4.2,
+      "ubicacion": "18 km al NO de Sullana, Sullana - Piura",
+      "fechaHora": "12/01/2026 22:02:01",
+      "lat": -4.82,
+      "lng": -80.83,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0032"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0033",
+      "magnitud": 3.6,
+      "ubicacion": "32 km al N de Mollendo, Islay - Arequipa",
+      "fechaHora": "13/01/2026 00:57:00",
+      "lat": -16.75,
+      "lng": -71.92,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0033"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0034",
+      "magnitud": 4.8,
+      "ubicacion": "295 km al S de Tacna, Tacna - Tacna",
+      "fechaHora": "13/01/2026 02:28:30",
+      "lat": -20.63,
+      "lng": -69.77,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0034"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0035",
+      "magnitud": 4,
+      "ubicacion": "63 km al SO de Chimbote, Santa - Áncash",
+      "fechaHora": "",
+      "lat": -9.42,
+      "lng": -79.03,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0035"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0026",
+      "magnitud": 4.2,
+      "ubicacion": "122 km al SO de Chimbote, Santa - Áncash",
+      "fechaHora": "10/01/2026 18:18:12",
+      "lat": -9.52,
+      "lng": -79.6,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0026"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0027",
+      "magnitud": 3.7,
+      "ubicacion": "64 km al O de Chimbote, Santa - Áncash",
+      "fechaHora": "11/01/2026 06:45:04",
+      "lat": -8.97,
+      "lng": -79.16,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0027"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0028",
+      "magnitud": 4,
+      "ubicacion": "37 km al SE de Huambo, Caylloma - Arequipa",
+      "fechaHora": "11/01/2026 16:51:17",
+      "lat": -15.99,
+      "lng": -71.9,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0028"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0029",
+      "magnitud": 4.1,
+      "ubicacion": "84 km al O de San Juan, Nasca - Ica",
+      "fechaHora": "12/01/2026 04:45:28",
+      "lat": -15.01,
+      "lng": -76.12,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0029"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0030",
+      "magnitud": 4.2,
+      "ubicacion": "73 km al O de Chimbote, Santa - Áncash",
+      "fechaHora": "12/01/2026 05:50:03",
+      "lat": -9.09,
+      "lng": -79.25,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0030"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0021",
+      "magnitud": 4,
+      "ubicacion": "33 km al O de Sancos, Huanca Sancos - Ayacucho",
+      "fechaHora": "08/01/2026 19:20:38",
+      "lat": -13.87,
+      "lng": -74.64,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0021"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0022",
+      "magnitud": 3.6,
+      "ubicacion": "12 km al NO de Ocoña, Camaná - Arequipa",
+      "fechaHora": "09/01/2026 12:49:12",
+      "lat": -16.33,
+      "lng": -73.15,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0022"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0023",
+      "magnitud": 5.3,
+      "ubicacion": "27 km al S de Palpa, Palpa - Ica",
+      "fechaHora": "09/01/2026 16:36:54",
+      "lat": -14.76,
+      "lng": -75.27,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0023"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0024",
+      "magnitud": 3.5,
+      "ubicacion": "12 km al S de Vitor, Arequipa - Arequipa",
+      "fechaHora": "10/01/2026 10:44:53",
+      "lat": -16.57,
+      "lng": -71.94,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0024"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0025",
+      "magnitud": 4,
+      "ubicacion": "27 km al NE de Mollendo, Islay - Arequipa",
+      "fechaHora": "10/01/2026 14:44:24",
+      "lat": -16.83,
+      "lng": -71.86,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0025"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0016",
+      "magnitud": 3.5,
+      "ubicacion": "16 km al NO de Junín, Junín - Junín",
+      "fechaHora": "07/01/2026 06:32:38",
+      "lat": -11.08,
+      "lng": -76.11,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0016"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0017",
+      "magnitud": 3.5,
+      "ubicacion": "17 km al NO de Chilca, Cañete - Lima",
+      "fechaHora": "07/01/2026 23:57:47",
+      "lat": -12.39,
+      "lng": -76.83,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0017"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0018",
+      "magnitud": 5.6,
+      "ubicacion": "71 km al N de Santa María de Nieva, Condorcanqui - Amazonas",
+      "fechaHora": "08/01/2026 00:17:49",
+      "lat": -3.99,
+      "lng": -77.66,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0018"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0019",
+      "magnitud": 4,
+      "ubicacion": "55 km al N de Yurimaguas, Alto Amazonas - Loreto",
+      "fechaHora": "08/01/2026 09:13:02",
+      "lat": -5.41,
+      "lng": -76.21,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0019"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0020",
+      "magnitud": 4.2,
+      "ubicacion": "30 km al NE de Punta de Bombón, Islay - Arequipa",
+      "fechaHora": "08/01/2026 16:47:40",
+      "lat": -17,
+      "lng": -71.58,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0020"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0011",
+      "magnitud": 3.7,
+      "ubicacion": "58 km al E de Yurimaguas, Alto Amazonas - Loreto",
+      "fechaHora": "04/01/2026 17:17:28",
+      "lat": -5.77,
+      "lng": -75.6,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0011"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0012",
+      "magnitud": 3.6,
+      "ubicacion": "32 km al NO de Huayhuahuasi, Espinar - Cusco",
+      "fechaHora": "05/01/2026 05:17:27",
+      "lat": -14.51,
+      "lng": -71.78,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0012"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0013",
+      "magnitud": 3.7,
+      "ubicacion": "13 km al SO de Chilca, Cañete - Lima",
+      "fechaHora": "05/01/2026 08:34:44",
+      "lat": -12.58,
+      "lng": -76.84,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0013"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0014",
+      "magnitud": 4.6,
+      "ubicacion": "78 km al O de San Juan, Nasca - Ica",
+      "fechaHora": "05/01/2026 12:07:19",
+      "lat": -15.32,
+      "lng": -76.06,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0014"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0015",
+      "magnitud": 3.7,
+      "ubicacion": "15 km al SO de Trujillo, Trujillo - La Libertad",
+      "fechaHora": "06/01/2026 21:01:12",
+      "lat": -8.19,
+      "lng": -79.14,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0015"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0006",
+      "magnitud": 4.1,
+      "ubicacion": "125 km al O de Pimentel, Chiclayo - Lambayeque",
+      "fechaHora": "02/01/2026 14:32:29",
+      "lat": -7.23,
+      "lng": -81,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0006"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0007",
+      "magnitud": 3.8,
+      "ubicacion": "69 km al O de Chimbote, Santa - Áncash",
+      "fechaHora": "02/01/2026 19:09:59",
+      "lat": -8.96,
+      "lng": -79.2,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0007"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0008",
+      "magnitud": 4.5,
+      "ubicacion": "82 km al O de Chimbote, Santa - Áncash",
+      "fechaHora": "03/01/2026 08:17:30",
+      "lat": -9.08,
+      "lng": -79.33,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0008"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0009",
+      "magnitud": 4.5,
+      "ubicacion": "89 km al SO de Ica, Ica - Ica",
+      "fechaHora": "03/01/2026 15:17:51",
+      "lat": -14.61,
+      "lng": -76.34,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0009"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0010",
+      "magnitud": 3.6,
+      "ubicacion": "11 km al S de Yauca, Caravelí - Arequipa",
+      "fechaHora": "04/01/2026 09:25:59",
+      "lat": -15.76,
+      "lng": -74.55,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0010"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0001",
+      "magnitud": 4.4,
+      "ubicacion": "70 km al O de San Juan, Nasca - Ica",
+      "fechaHora": "01/01/2026 05:20:25",
+      "lat": -15.26,
+      "lng": -76,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0001"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0002",
+      "magnitud": 4.2,
+      "ubicacion": "27 km al O de Chilca, Cañete - Lima",
+      "fechaHora": "01/01/2026 11:28:20",
+      "lat": -12.57,
+      "lng": -76.98,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0002"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0003",
+      "magnitud": 4.5,
+      "ubicacion": "75 km al O de San Juan, Nasca - Ica",
+      "fechaHora": "01/01/2026 18:30:52",
+      "lat": -15.29,
+      "lng": -76.04,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0003"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0004",
+      "magnitud": 3.6,
+      "ubicacion": "35 km al E de Pozuzo, Oxapampa - Pasco",
+      "fechaHora": "01/01/2026 23:08:39",
+      "lat": -10.11,
+      "lng": -75.24,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0004"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0005",
+      "magnitud": 3.7,
+      "ubicacion": "61 km al O de Chimbote, Santa - Áncash",
+      "fechaHora": "02/01/2026 08:16:00",
+      "lat": -9.02,
+      "lng": -79.14,
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0005"
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0278",
+      "magnitud": 3.6,
+      "ubicacion": "32 km al SO de Chilca, Cañete - Lima",
+      "fechaHora": "14/05/2026 09:19:04",
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0278",
+      "lat": -12.75,
+      "lng": -76.91
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0277",
+      "magnitud": 4,
+      "ubicacion": "49 km al NE de Satipo, Satipo - Junín",
+      "fechaHora": "14/05/2026 08:57:27",
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0277",
+      "lat": -10.94,
+      "lng": -74.32
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0276",
+      "magnitud": 4,
+      "ubicacion": "29 km al SE de Chala, Caravelí - Arequipa",
+      "fechaHora": "14/05/2026 06:08:58",
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0276",
+      "lat": -15.99,
+      "lng": -74.01
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0275",
+      "magnitud": 3.6,
+      "ubicacion": "30 km al SO de Chilca, Cañete - Lima",
+      "fechaHora": "14/05/2026 05:41:53",
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0275",
+      "lat": -12.7,
+      "lng": -76.94
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0274",
+      "magnitud": 3.6,
+      "ubicacion": "77 km al SO de Ica, Ica - Ica",
+      "fechaHora": "13/05/2026 21:36:35",
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0274",
+      "lat": -14.67,
+      "lng": -76.09
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0273",
+      "magnitud": 4,
+      "ubicacion": "73 km al O de San Juan de Marcona, Nasca - Ica",
+      "fechaHora": "13/05/2026 14:49:56",
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0273",
+      "lat": -15.17,
+      "lng": -75.82
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0272",
+      "magnitud": 4,
+      "ubicacion": "28 km al SO de Ayabaca, Ayabaca - Piura",
+      "fechaHora": "13/05/2026 09:10:28",
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0272",
+      "lat": -4.79,
+      "lng": -79.92
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0271",
+      "magnitud": 4.3,
+      "ubicacion": "37 km al NE de Satipo, Satipo - Junín",
+      "fechaHora": "12/05/2026 17:47:42",
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0271",
+      "lat": -11.07,
+      "lng": -74.35
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0270",
+      "magnitud": 3.7,
+      "ubicacion": "30 km al O de Chala, Caravelí - Arequipa",
+      "fechaHora": "12/05/2026 14:42:15",
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0270",
+      "lat": -15.96,
+      "lng": -74.51
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0269",
+      "magnitud": 4.2,
+      "ubicacion": "20 km al N de Capaso, El Collao - Puno",
+      "fechaHora": "12/05/2026 13:32:39",
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0269",
+      "lat": -17,
+      "lng": -69.73
+    }
+  ]
+}
