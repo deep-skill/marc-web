@@ -1,0 +1,470 @@
+---
+import MapaSismos from '../components/MapaSismos.jsx';
+import fs from 'fs';
+
+const CACHE_TIME = 60 * 1000;
+const cacheKey = 'sismos_cache';
+const HISTORIAL_FILE = './data/sismos-history.json';
+
+function loadHistorial() {
+  try {
+    if (fs.existsSync(HISTORIAL_FILE)) {
+      const data = fs.readFileSync(HISTORIAL_FILE, 'utf-8');
+      return JSON.parse(data);
+    }
+  } catch (e) {
+    console.error('Error cargando historial:', e);
+  }
+  return { sismos: [] };
+}
+
+function getDefaultLat(ubicacion) {
+  const regions = [
+    { keyword: 'Lima', lat: -12.0 }, { keyword: 'Arequipa', lat: -16.4 },
+    { keyword: 'Ancash', lat: -9.5 }, { keyword: 'Ica', lat: -14.5 },
+    { keyword: 'Piura', lat: -5.2 }, { keyword: 'Junin', lat: -11.5 },
+    { keyword: 'Cusco', lat: -13.5 }, { keyword: 'Puno', lat: -15.0 },
+    { keyword: 'Amazonas', lat: -5.5 }, { keyword: 'San Martin', lat: -7.0 },
+    { keyword: 'Ucayali', lat: -8.5 }, { keyword: 'Madre de Dios', lat: -12.5 },
+  ];
+  for (const r of regions) {
+    if (ubicacion.toLowerCase().includes(r.keyword.toLowerCase())) {
+      return r.lat + (Math.random() * 0.5 - 0.25);
+    }
+  }
+  return -9.5 + (Math.random() * 4 - 2);
+}
+
+function getDefaultLng(ubicacion) {
+  const regions = [
+    { keyword: 'Lima', lng: -77.0 }, { keyword: 'Arequipa', lng: -71.5 },
+    { keyword: 'Ancash', lng: -78.5 }, { keyword: 'Ica', lng: -75.5 },
+    { keyword: 'Piura', lng: -80.5 }, { keyword: 'Junin', lng: -75.0 },
+    { keyword: 'Cusco', lng: -72.0 }, { keyword: 'Puno', lng: -70.0 },
+    { keyword: 'Amazonas', lng: -77.5 }, { keyword: 'San Martin', lng: -76.5 },
+    { keyword: 'Ucayali', lng: -74.5 }, { keyword: 'Madre de Dios', lng: -69.5 },
+  ];
+  for (const r of regions) {
+    if (ubicacion.toLowerCase().includes(r.keyword.toLowerCase())) {
+      return r.lng + (Math.random() * 0.5 - 0.25);
+    }
+  }
+  return -75 + (Math.random() * 4 - 2);
+}
+
+let sismosData = null;
+let lastFetch = 0;
+
+async function scrapeIGP() {
+  const puppeteer = await import('puppeteer');
+  
+  const browser = await puppeteer.default.launch({
+    headless: true,
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
+
+  try {
+    const page = await browser.newPage();
+    await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36');
+    
+    await page.goto('https://ultimosismo.igp.gob.pe/ultimo-sismo/sismos-reportados', {
+      waitUntil: 'networkidle2',
+      timeout: 30000
+    });
+
+    await new Promise(r => setTimeout(r, 3000));
+    
+    await page.waitForFunction(() => {
+      const table = document.querySelector('table');
+      return table && table.querySelector('tbody tr');
+    }, { timeout: 15000 });
+
+    const sismos = await page.evaluate(() => {
+      const rows = document.querySelectorAll('table tbody tr');
+      const resultados = [];
+      
+      rows.forEach((row, index) => {
+        if (index >= 30) return;
+        
+        const cols = row.querySelectorAll('td');
+        if (cols.length >= 5) {
+          const codigo = cols[1]?.textContent?.trim() || '';
+          const ubicacion = cols[2]?.textContent?.trim() || '';
+          const magnitudText = cols[3]?.textContent?.trim() || '';
+          const magnitud = parseFloat(magnitudText);
+          const fechaHora = cols[4]?.textContent?.trim() || '';
+          
+          if (!isNaN(magnitud)) {
+            resultados.push({ codigo, magnitud, ubicacion, fechaHora, link: '' });
+          }
+        }
+      });
+      
+      return resultados;
+    });
+
+    console.log(`✅ Se encontraron ${sismos.length} sismos`);
+
+    const sismosWithCoords = [];
+    for (const s of sismos.slice(0, 10)) {
+      try {
+        const link = `https://ultimosismo.igp.gob.pe/evento/${s.codigo.replace('IGP/CENSIS/RS ', '')}`;
+        await page.goto(link, { waitUntil: 'networkidle2', timeout: 10000 });
+        await new Promise(r => setTimeout(r, 1500));
+        
+        const coords = await page.evaluate(() => {
+          const bodyText = document.body.innerText;
+          const match = bodyText.match(/Latitud y Longitud.*?:\s*([-\d.]+)[,\s]+([-\d.]+)/);
+          if (match) {
+            return { lat: parseFloat(match[1]), lng: parseFloat(match[2]) };
+          }
+          return { lat: -9.5 + (Math.random() * 2 - 1), lng: -75 + (Math.random() * 2 - 1) };
+        });
+        
+        sismosWithCoords.push({ ...s, ...coords, link });
+      } catch (e) {
+        sismosWithCoords.push({ ...s, lat: -9.5, lng: -75, link: '' });
+      }
+    }
+
+    const allSismos = sismos.map((s) => {
+      const withCoords = sismosWithCoords.find(sc => sc.codigo === s.codigo);
+      if (withCoords) return withCoords;
+      
+      const lat = getDefaultLat(s.ubicacion);
+      const lng = getDefaultLng(s.ubicacion);
+      return { ...s, lat, lng, link: '' };
+    });
+
+    return {
+      fechaActualizacion: new Date().toISOString(),
+      sismos: allSismos
+    };
+
+  } catch (error) {
+    console.error('❌ Error durante el scraping:', error.message);
+    throw error;
+  } finally {
+    await browser.close();
+  }
+}
+
+const now = Date.now();
+if (!sismosData || (now - lastFetch) > CACHE_TIME) {
+  try {
+    sismosData = await scrapeIGP();
+    lastFetch = now;
+    console.log('✅ Datos de sismos actualizados del IGP');
+  } catch (e) {
+    console.error('Error scraper:', e);
+    sismosData = { sismos: [], fechaActualizacion: new Date().toISOString() };
+  }
+} else {
+  console.log('📦 Usando datos en caché');
+}
+
+// Siempre cargar el historial completo para mostrar todos los sismos
+const historial = loadHistorial();
+if (historial.sismos && historial.sismos.length > 0) {
+  console.log('📚 Cargando historial completo:', historial.sismos.length, 'sismos');
+  sismosData = {
+    fechaActualizacion: new Date().toISOString(),
+    sismos: historial.sismos
+  };
+}
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sismos en Perú - MARC Perú</title>
+  <meta name="description" content="Mapa de sismos en Perú - Datos del Instituto Geofísico del Perú (IGP)" />
+  
+  <!-- Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  
+  <style>
+    :root {
+      --azul-principal: #1f3c88;
+      --azul-oscuro: #162d66;
+      --blanco: #ffffff;
+      --gris-fondo: #f5f7fb;
+      --gris-texto: #4a5568;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--gris-fondo);
+      color: var(--gris-texto);
+      line-height: 1.6;
+    }
+    
+    /* HEADER -类似的FOOTER */
+    .header-marc {
+      background: var(--azul-oscuro);
+      padding: 40px 0;
+      border-bottom: 4px solid var(--azul-principal);
+    }
+    
+    .header-marc .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 50px;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .logo-marc img {
+      max-height: 80px;
+      width: auto;
+    }
+    
+    .logo-text h2 {
+      margin: 0;
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--blanco);
+      letter-spacing: 0.5px;
+    }
+    
+    .logo-text span {
+      font-size: 1.3rem;
+      color: rgba(255,255,255,0.8);
+      font-weight: 500;
+    }
+    
+    .btn-inicio {
+      background: var(--blanco);
+      color: var(--azul-principal) !important;
+      padding: 16px 35px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .btn-inicio:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+    
+    /* HERO */
+    .hero-marc {
+      background: var(--azul-principal);
+      padding: 45px 20px;
+      text-align: center;
+    }
+    
+    .hero-marc .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .hero-marc h1 {
+      color: var(--blanco);
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin: 0 0 10px;
+      letter-spacing: 0.5px;
+    }
+    
+    .hero-marc p {
+      color: rgba(255,255,255,0.85);
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin: 0;
+    }
+    
+    /* MAIN CONTENT */
+    .main-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    
+    /* FOOTER - 参考这个样式 */
+    .footer-marc {
+      background: var(--azul-oscuro);
+      color: var(--blanco);
+      padding: 35px 0 30px;
+    }
+    
+    .footer-marc .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+    
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+    
+    .footer-social {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    
+.footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+    
+    .footer-brand img {
+      max-height: 55px;
+      vertical-align: middle;
+    }
+    
+    .footer-brand-text {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--blanco);
+    }
+    
+    .footer-social a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.15);
+      color: var(--blanco);
+      font-size: 1.4rem;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+    
+    .footer-social a:hover {
+      background: var(--blanco);
+      color: var(--azul-principal);
+      transform: translateY(-3px);
+    }
+    
+    .footer-bottom {
+      margin-top: 25px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      text-align: center;
+    }
+    
+    .footer-bottom p {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.7);
+      margin: 0;
+    }
+    
+    @media (max-width: 768px) {
+      .header-marc .container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+      }
+      .hero-marc h1 { font-size: 1.9rem; }
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header-marc">
+  <div class="container">
+    <div class="header-content">
+      <div class="header-left">
+        <a href="index.html">
+          <img src="/images/logo/logo.png" alt="MARC Perú"/>
+        </a>
+        <div class="logo-text">
+          <h2>Monitoreo de Sismos</h2>
+          <span>MARC Ingeniería y Construcción</span>
+        </div>
+      </div>
+      <a href="index.html" class="btn-inicio">
+        <i class="fa fa-home"></i> Inicio
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<div class="hero-marc">
+  <div class="container">
+    <h1>Sismos en Perú</h1>
+    <p>Datos en tiempo real del Instituto Geofísico del Perú (IGP)</p>
+  </div>
+</div>
+
+<!-- Main Content -->
+<main class="main-content">
+  <MapaSismos client:only="react" initialData={sismosData} />
+</main>
+
+<!-- Footer -->
+<footer class="footer-marc">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="/images/logo/logo.png" alt="MARC Perú"/>
+        <span class="footer-brand-text">MARC Perú - Ingeniería y Construcción</span>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/MARC-Ingenieros-101927331580716/" target="_blank" title="Facebook">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="#" target="_blank" title="LinkedIn">
+          <i class="fa fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 MARC Perú. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
