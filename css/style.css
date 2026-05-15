@@ -502,6 +502,16 @@ label span {
   background-color: #24389F;
   color: #FFF
 }
+
+/* Botón Sismos - siempre activo en rojo */
+.sismos-btn > a {
+  color: #e74c3c !important;
+  font-weight: 700 !important;
+}
+.sismos-btn {
+  border-bottom: 4px solid #e74c3c !important;
+}
+
 .request-model-body {
   margin: 0 auto;
   left: 0;

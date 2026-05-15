@@ -1,0 +1,95 @@
+{
+  "fechaActualizacion": "2026-05-14T18:56:47.072Z",
+  "sismos": [
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0278",
+      "magnitud": 3.6,
+      "ubicacion": "32 km al SO de Chilca, Cañete - Lima",
+      "fechaHora": "14/05/2026 09:19:04",
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0278",
+      "lat": -12.75,
+      "lng": -76.91
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0277",
+      "magnitud": 4,
+      "ubicacion": "49 km al NE de Satipo, Satipo - Junín",
+      "fechaHora": "14/05/2026 08:57:27",
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0277",
+      "lat": -10.94,
+      "lng": -74.32
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0276",
+      "magnitud": 4,
+      "ubicacion": "29 km al SE de Chala, Caravelí - Arequipa",
+      "fechaHora": "14/05/2026 06:08:58",
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0276",
+      "lat": -15.99,
+      "lng": -74.01
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0275",
+      "magnitud": 3.6,
+      "ubicacion": "30 km al SO de Chilca, Cañete - Lima",
+      "fechaHora": "14/05/2026 05:41:53",
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0275",
+      "lat": -12.7,
+      "lng": -76.94
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0274",
+      "magnitud": 3.6,
+      "ubicacion": "77 km al SO de Ica, Ica - Ica",
+      "fechaHora": "13/05/2026 21:36:35",
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0274",
+      "lat": -14.67,
+      "lng": -76.09
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0273",
+      "magnitud": 4,
+      "ubicacion": "73 km al O de San Juan de Marcona, Nasca - Ica",
+      "fechaHora": "13/05/2026 14:49:56",
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0273",
+      "lat": -15.17,
+      "lng": -75.82
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0272",
+      "magnitud": 4,
+      "ubicacion": "28 km al SO de Ayabaca, Ayabaca - Piura",
+      "fechaHora": "13/05/2026 09:10:28",
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0272",
+      "lat": -4.79,
+      "lng": -79.92
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0271",
+      "magnitud": 4.3,
+      "ubicacion": "37 km al NE de Satipo, Satipo - Junín",
+      "fechaHora": "12/05/2026 17:47:42",
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0271",
+      "lat": -11.07,
+      "lng": -74.35
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0270",
+      "magnitud": 3.7,
+      "ubicacion": "30 km al O de Chala, Caravelí - Arequipa",
+      "fechaHora": "12/05/2026 14:42:15",
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0270",
+      "lat": -15.96,
+      "lng": -74.51
+    },
+    {
+      "codigo": "IGP/CENSIS/RS 2026-0269",
+      "magnitud": 4.2,
+      "ubicacion": "20 km al N de Capaso, El Collao - Puno",
+      "fechaHora": "12/05/2026 13:32:39",
+      "link": "https://ultimosismo.igp.gob.pe/evento/2026-0269",
+      "lat": -17,
+      "lng": -69.73
+    }
+  ]
+}
