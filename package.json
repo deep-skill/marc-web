@@ -1,0 +1,35 @@
+{
+  "name": "marc-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "update-sismos": "node scripts/scraper.js",
+    "build:update": "npm run update-sismos && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deep-skill/marc-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deep-skill/marc-web/issues"
+  },
+  "homepage": "https://github.com/deep-skill/marc-web#readme",
+  "dependencies": {
+    "@astrojs/node": "^10.1.1",
+    "@astrojs/react": "^5.0.4",
+    "astro": "^6.3.1",
+    "leaflet": "^1.9.4",
+    "puppeteer": "^24.43.1",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-leaflet": "^5.0.0"
+  }
+}
