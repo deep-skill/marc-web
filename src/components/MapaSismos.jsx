@@ -244,6 +244,7 @@ export default function MapaSismos() {
   const [sismos, setSismos] = useState([]);
   const [todosSismos, setTodosSismos] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   const [selectedSismo, setSelectedSismo] = useState(null);
   const [filtroMes, setFiltroMes] = useState('');
   const [visibleCount, setVisibleCount] = useState(10);
@@ -251,6 +252,30 @@ export default function MapaSismos() {
 
   const anioActual = new Date().getFullYear();
   const mesActual = MESES[new Date().getMonth()]?.label || '';
+
+  const fetchSismos = () => {
+    setLoading(true);
+    setError(null);
+    fetch(`${import.meta.env.PUBLIC_API_URL}/sismos?anio=${anioActual}`)
+      .then((res) => {
+        if (!res.ok) throw new Error('Network response was not ok');
+        return res.json();
+      })
+      .then((data) => {
+        const processed = procesarSismos(data);
+        setSismos(processed);
+        setTodosSismos(processed);
+        setLoading(false);
+      })
+      .catch((err) => {
+        setError('No se pudieron cargar los datos. Intenta m\xc3\xa1s tarde.');
+        setLoading(false);
+      });
+  };
+
+  useEffect(() => {
+    fetchSismos();
+  }, [anioActual]);
 
   const procesarSismos = (data) => {
     if (!data || data.length === 0) return [];
@@ -300,6 +325,7 @@ export default function MapaSismos() {
 
   useEffect(() => {
     setVisibleCount(10);
+    setError(null);
 
     if (!filtroMes) {
       setSismos(todosSismos);
@@ -330,6 +356,18 @@ export default function MapaSismos() {
       }
     }, 100);
   };
+
+  if (error) {
+    return (
+      <div style={styles.loading}>
+        <i className="fa fa-exclamation-triangle" style={{ fontSize: '40px', color: COLORS.red }}></i>
+        <p style={{ marginTop: '20px', color: '#333' }}>{error}</p>
+        <button onClick={fetchSismos} style={styles.verMasBtn}>
+          <i className="fa fa-refresh"></i> Reintentar
+        </button>
+      </div>
+    );
+  }
 
   if (loading) {
     return (
