@@ -502,6 +502,15 @@ label span {
   background-color: #24389F;
   color: #FFF
 }
+
+#cssmenu > ul > li.sismos-btn > a {
+  color: #e74c3c;
+  font-weight: 700;
+}
+#cssmenu > ul > li.sismos-btn {
+  border-bottom: 4px solid #e74c3c;
+}
+
 .request-model-body {
   margin: 0 auto;
   left: 0;

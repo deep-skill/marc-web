@@ -1,0 +1,292 @@
+---
+import MapaSismos from '../components/MapaSismos.jsx';
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sismos en Perú - MARC Perú</title>
+  <meta name="description" content="Mapa de sismos en Perú - Datos en tiempo real del Instituto Geofísico del Perú (IGP)" />
+  <meta name="keywords" content="sismos, Perú, IGP, monitoreo sísmico, geotecnia, MARC" />
+  <link rel="icon" type="image/icon" href="images/favicon/favicon.ico">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <!-- Font Awesome -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:300,400,500,500i,700,900" rel="stylesheet">
+  <!-- Menu Maker -->
+  <link rel="stylesheet" type="text/css" href="css/menumaker.css">
+  <!-- Themify Icons -->
+  <link href="css/themify-icons.css" rel="stylesheet" type="text/css"/>
+  <!-- Custom Style -->
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <style>
+    .sismos-hero {
+      background: linear-gradient(135deg, #1f3c88 0%, #162d66 100%);
+      padding: 60px 0;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .sismos-hero h1 {
+      color: #ffffff;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin: 0 0 10px;
+      font-family: 'Poppins', sans-serif;
+    }
+    .sismos-hero p {
+      color: rgba(255,255,255,0.85);
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    .sismos-main-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .btn-volver {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #ffffff;
+      color: #1f3c88;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      font-family: 'Poppins', sans-serif;
+    }
+    .btn-volver:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      color: #162d66;
+    }
+    @media (max-width: 768px) {
+      .sismos-hero h1 { font-size: 1.8rem; }
+      .sismos-hero p { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- top bar -->
+<div class="top-bar" style="background-image: url('images/bg/top-bar.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="info-bar">
+          <p>Av. Oscar Benavides 483, Int. 1213, Cercado de Lima, Lima - Perú</p>
+        </div>
+      </div>
+      <div class="col-sm-4 hidden-xs">
+        <ul class="top-social-icon">
+          <li><a href="https://www.facebook.com/MARC-Ingenieros-101927331580716/" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/marc-ingenieros/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fa fa-wordpress" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end top bar -->
+
+<!-- navigation -->
+<div class="nav-bar">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="info-nav">
+              <div class="info-nav-heading">Central telefónica</div>
+              <div class="info-nav-dtl"><a href="tel:#">+51 997 336 060</a></div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="info-nav">
+              <div class="info-nav-heading">Correo electrónico</div>
+              <div class="info-nav-dtl"><a href="mailto:#">miguel.roncal@marc.com.pe</a></div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="info-nav">
+              <div class="info-nav-heading">Certificaciones</div>
+              <div class="info-nav-dtl">AASHTO - AMRL</div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <a href="#" class="btn btn-default pull-right" data-toggle="modal" data-target="#request-model">Consultar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-10 pad-0">
+        <div class="navigation">
+          <div id="cssmenu">
+            <ul>
+              <li><a href="#">Marc</a>
+                <ul>
+                  <li><a href="about-us.html">Nosotros</a></li>
+                  <li><a href="testimonials.html">Testimonios</a></li>
+                  <li><a href="team.html">Equipo</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Nuestros Servicios</a>
+                <ul>
+                  <li><a href="solutions.html">Servicios</a></li>
+                  <li><a href="solutions-details.html">Detalle de servicios</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Nuestros Proyectos</a>
+                <ul>
+                  <li><a href="#">Proyectos</a></li>
+                  <li><a href="#">Detalle de proyectos</a></li>
+                </ul>
+              </li>
+              <li class="sismos-btn"><a href="sismos.html">Sismos</a></li>
+              <li><a href="contact.html">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2 pad-0">
+        <div class="nav-right">
+          <ul>
+            <li class="download-btn">
+              <a href="#"><i class="ti-download"></i> Descargas</a>
+            </li>
+            <li class="search-btn search-icon text-center">
+              <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end navigation -->
+
+<!-- Hero -->
+<div class="sismos-hero">
+  <div class="container">
+    <h1>Monitoreo de Sismos en Perú</h1>
+    <p>Datos en tiempo real del Instituto Geofísico del Perú (IGP)</p>
+  </div>
+</div>
+
+<!-- Main Content -->
+<main class="sismos-main-content">
+  <div style="margin-bottom: 20px;">
+    <a href="index.html" class="btn-volver">
+      <i class="fa fa-arrow-left"></i> Volver al inicio
+    </a>
+  </div>
+  <MapaSismos client:only="react" />
+</main>
+
+<!-- footer -->
+<footer id="footer" class="footer-main-block" style="background-image: url('images/bg/footer-bg.jpg')">
+  <div class="footer-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-about footer-widget">
+            <h5 class="footer-heading">Nuestra Industria</h5>
+            <p>MARC Ingeniería y Construcción SAC es una empresa dedicada al servicio de consultoría de ingeniería y proyectos del sector de obras civiles, energía y minería.</p>
+            <a href="about-us.html" class="plain-btn">ver más</a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-solutions footer-widget">
+            <h5 class="footer-heading">Nuestros Servicios</h5>
+            <ul>
+              <li><a href="solutions-gelology.html">Geotecnia y Geología</a></li>
+              <li><a href="solutions-seismology.html">Sismología y Peligro Sísmico</a></li>
+              <li><a href="solutions-geophysics.html">Geofísica Sísmica y Eléctrica</a></li>
+              <li><a href="solutions-vial-security.html">Diseño y seguridad vial</a></li>
+              <li><a href="solutions-pavement-design.html">Diseño de pavimentos</a></li>
+              <li><a href="solutions-rock-and-soil-laboratory.html">Laboratorio de suelos y rocas</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-news footer-widget">
+            <h5 class="footer-heading">Últimas Noticias</h5>
+            <ul>
+              <li><a href="https://busquedas.elperuano.pe/normaslegales/decreto-supremo-que-aprueba-la-norma-tecnica-e031-aislamie-decreto-supremo-n-030-2019-vivienda-1823291-2/">Decreto Supremo que aprueba la Norma Técnica E.031 "Aislamiento Sísmico"</a> - Abril 13, 2020</li>
+              <li><a href="https://www.gob.pe/institucion/vivienda/noticias/111881-peruentusmanos-deten-el-avance-del-covid19">PerúEnTusManos – Detén el avance del COVID19</a> - Abril 04, 2020</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-contact footer-widget">
+            <h5 class="footer-heading">Contacto</h5>
+            <p>Si desea contactar con nosotros puede escribirnos o llamarnos, con gusto lo atenderemos a la brevedad.</p>
+            <ul class="footer-address">
+              <li><span>Dirección:</span> Av. Oscar Benavides 483, Int. 1213, Cercado de Lima, Lima - Perú</li>
+              <li><span>Tel:</span> <a href="tel:#">+51 997 336 060</a></li>
+              <li><span>Email:</span> <a href="mailto:#">miguel.roncal@marc.com.pe</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright" style="background-image: url('images/bg/copy-bg.jpg')">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="copyright-text">
+            <p>MARC | &copy; 2026 <a href="index.html">MARC Perú</a>. | Todos los derechos reservados.</p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="footer-nav">
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="contact.html">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="appWhatapp" target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=51997336060&text=hola,%20qué%20tal?">
+       <img src="images/icons/whatsapp.svg" alt="Whatapp">
+    </a>
+  </div>
+</footer>
+<!-- end footer -->
+
+<!-- jquery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/menumaker.js"></script>
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="js/jquery.elevatezoom.js"></script>
+<script type="text/javascript" src="js/jquery.ajaxchimp.js"></script>
+<script type="text/javascript" src="js/smooth-scroll.js"></script>
+<script type="text/javascript" src="js/waypoints.min.js"></script>
+<script type="text/javascript" src="js/jquery.counterup.js"></script>
+<script type="text/javascript" src="js/price-slider.js"></script>
+<script type="text/javascript" src="js/theme.js"></script>
+
+</body>
+</html>
