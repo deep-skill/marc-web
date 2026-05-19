@@ -1,0 +1,8 @@
+{
+  "name": "marc-sismos-lambda",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.mjs",
+  "description": "Lambda proxy for IGP earthquake API",
+  "private": true
+}
