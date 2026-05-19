@@ -273,8 +273,8 @@ export default function MapaSismos() {
     });
 
     const sorted = Array.from(uniqueMap.values()).sort((a, b) => {
-      const fechaA = new Date(a.fechaHora?.replace(/(\d{2})\/(\d{2})\/(\d{4})/, '$3-$2-$1') || '1970-01-01');
-      const fechaB = new Date(b.fechaHora?.replace(/(\d{2})\/(\d{2})\/(\d{4})/, '$3-$2-$1') || '1970-01-01');
+      const fechaA = new Date(a.fechaHora || '1970-01-01');
+      const fechaB = new Date(b.fechaHora || '1970-01-01');
       return fechaB - fechaA;
     });
 
@@ -307,10 +307,9 @@ export default function MapaSismos() {
     }
 
     const filtered = todosSismos.filter((sismo) => {
-      const fechaMatch = sismo.fechaHora?.match(/(\d{2})\/(\d{2})\/(\d{4})/);
-      if (!fechaMatch) return false;
-      const mes = fechaMatch[2];
-      const anio = fechaMatch[3];
+      if (!sismo.fechaHora) return false;
+      const mes = sismo.fechaHora.substring(5, 7);
+      const anio = sismo.fechaHora.substring(0, 4);
       return mes === filtroMes && anio === String(anioActual);
     });
 
