@@ -52,7 +52,7 @@ export const handler = async (event) => {
   } catch (error) {
     return {
       statusCode: 502,
-      headers: corsHeaders,
+      headers: { ...corsHeaders, 'Cache-Control': 'no-store' },
       body: JSON.stringify({ error: 'Error fetching sismos', detail: error.message }),
     };
   }

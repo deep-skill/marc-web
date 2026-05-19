@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
-import mockSismos from '../data/mock-sismos.json';
 
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -258,10 +257,12 @@ export default function MapaSismos() {
     setLoading(true);
     setError(null);
     const baseUrl = import.meta.env.PUBLIC_API_URL;
-    const url = baseUrl
-      ? `${baseUrl}?anio=${anioActual}`
-      : `https://ultimosismo.igp.gob.pe/api/ultimo-sismo/ajaxb/${anioActual}`;
-    fetch(url)
+    if (!baseUrl) {
+      setError('Configuración incompleta: falta PUBLIC_API_URL.');
+      setLoading(false);
+      return;
+    }
+    fetch(`${baseUrl}?anio=${anioActual}`)
       .then((res) => {
         if (!res.ok) throw new Error('Network response was not ok');
         return res.json();
@@ -273,9 +274,7 @@ export default function MapaSismos() {
         setLoading(false);
       })
       .catch(() => {
-        const processed = procesarSismos(mockSismos);
-        setSismos(processed);
-        setTodosSismos(processed);
+        setError('No se pudieron cargar los datos del IGP. Intenta m\xc3\xa1s tarde.');
         setLoading(false);
       });
   };
