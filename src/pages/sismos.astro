@@ -136,7 +136,12 @@ import MapaSismos from '../components/MapaSismos.jsx';
 
 <!-- Main Content -->
 <main class="sismos-main-content">
-  <MapaSismos client:only="react" />
+  <MapaSismos client:only="react">
+    <div slot="fallback" style="text-align: center; padding: 80px;">
+      <i class="fa fa-spinner fa-spin" style="font-size: 40px; color: #1f3c88;"></i>
+      <p style="margin-top: 20px; font-family: 'Poppins', sans-serif; color: #333;">Cargando datos de sismos...</p>
+    </div>
+  </MapaSismos>
 </main>
 
 <!-- footer -->
