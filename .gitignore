@@ -1,2 +1,33 @@
+# Dependencias
+node_modules/
+
+# Build de producción
+dist/
+
+# Archivos temporales de Astro
+.astro/
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# IDE
 .idea/
 *.iml
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Datos dinámicos de scraping (output, no fuente)
+data/
