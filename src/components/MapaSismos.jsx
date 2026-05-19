@@ -280,6 +280,17 @@ export default function MapaSismos() {
   const procesarSismos = (data) => {
     if (!data || data.length === 0) return [];
 
+    const parseFechaHora = (fechaLocal, horaLocal) => {
+      if (!fechaLocal) return '';
+      const fecha = fechaLocal.split('T')[0];
+      let hora = '';
+      if (horaLocal) {
+        hora = horaLocal.includes('T') ? horaLocal.split('T')[1] : horaLocal;
+        hora = hora.split('.')[0];
+      }
+      return hora ? `${fecha} ${hora}` : fecha;
+    };
+
     const uniqueMap = new Map();
     data.forEach((sismo) => {
       if (!uniqueMap.has(sismo.codigo)) {
@@ -287,7 +298,7 @@ export default function MapaSismos() {
           codigo: `IGP/CENSIS/RS ${sismo.codigo}`,
           magnitud: parseFloat(sismo.magnitud),
           ubicacion: sismo.referencia,
-          fechaHora: `${sismo.fecha_local?.split('T')[0]} ${sismo.hora_local?.split('T')[1]?.split('.')[0] || ''}`,
+          fechaHora: parseFechaHora(sismo.fecha_local, sismo.hora_local),
           lat: parseFloat(sismo.latitud),
           lng: parseFloat(sismo.longitud),
           profundidad: sismo.profundidad,
@@ -305,23 +316,6 @@ export default function MapaSismos() {
 
     return sorted;
   };
-
-  useEffect(() => {
-    fetch(`/api/sismos?anio=${anioActual}`)
-      .then((res) => {
-        if (!res.ok) throw new Error('Network response was not ok');
-        return res.json();
-      })
-      .then((data) => {
-        const processed = procesarSismos(data);
-        setSismos(processed);
-        setTodosSismos(processed);
-        setLoading(false);
-      })
-      .catch((err) => {
-        setLoading(false);
-      });
-  }, [anioActual]);
 
   useEffect(() => {
     setVisibleCount(10);
