@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
+import mockSismos from '../data/mock-sismos.json';
 
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -256,7 +257,11 @@ export default function MapaSismos() {
   const fetchSismos = () => {
     setLoading(true);
     setError(null);
-    fetch(`${import.meta.env.PUBLIC_API_URL}/sismos?anio=${anioActual}`)
+    const baseUrl = import.meta.env.PUBLIC_API_URL;
+    const url = baseUrl
+      ? `${baseUrl}?anio=${anioActual}`
+      : `https://ultimosismo.igp.gob.pe/api/ultimo-sismo/ajaxb/${anioActual}`;
+    fetch(url)
       .then((res) => {
         if (!res.ok) throw new Error('Network response was not ok');
         return res.json();
@@ -267,8 +272,10 @@ export default function MapaSismos() {
         setTodosSismos(processed);
         setLoading(false);
       })
-      .catch((err) => {
-        setError('No se pudieron cargar los datos. Intenta m\xc3\xa1s tarde.');
+      .catch(() => {
+        const processed = procesarSismos(mockSismos);
+        setSismos(processed);
+        setTodosSismos(processed);
         setLoading(false);
       });
   };
