@@ -28,11 +28,15 @@ import MapaSismos from '../components/MapaSismos.jsx';
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
   <style>
+    .nav-bar {
+      padding-bottom: 20px;
+    }
     .sismos-hero {
       background: linear-gradient(135deg, #1f3c88 0%, #162d66 100%);
       padding: 60px 0;
       text-align: center;
-      margin-top: 20px;
+      margin-top: 0;
+      margin-bottom: 40px;
     }
     .sismos-hero h1 {
       color: #ffffff;
@@ -52,26 +56,6 @@ import MapaSismos from '../components/MapaSismos.jsx';
       max-width: 1200px;
       margin: 0 auto;
       padding: 40px 20px;
-    }
-    .btn-volver {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: #ffffff;
-      color: #1f3c88;
-      padding: 12px 24px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1rem;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      font-family: 'Poppins', sans-serif;
-    }
-    .btn-volver:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-      color: #162d66;
     }
     @media (max-width: 768px) {
       .sismos-hero h1 { font-size: 1.8rem; }
@@ -137,47 +121,6 @@ import MapaSismos from '../components/MapaSismos.jsx';
           </div>
         </div>
       </div>
-      <div class="col-sm-10 pad-0">
-        <div class="navigation">
-          <div id="cssmenu">
-            <ul>
-              <li><a href="#">Marc</a>
-                <ul>
-                  <li><a href="about-us.html">Nosotros</a></li>
-                  <li><a href="testimonials.html">Testimonios</a></li>
-                  <li><a href="team.html">Equipo</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Nuestros Servicios</a>
-                <ul>
-                  <li><a href="solutions.html">Servicios</a></li>
-                  <li><a href="solutions-details.html">Detalle de servicios</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Nuestros Proyectos</a>
-                <ul>
-                  <li><a href="#">Proyectos</a></li>
-                  <li><a href="#">Detalle de proyectos</a></li>
-                </ul>
-              </li>
-              <li class="sismos-btn"><a href="sismos.html">Sismos</a></li>
-              <li><a href="contact.html">Contacto</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-2 pad-0">
-        <div class="nav-right">
-          <ul>
-            <li class="download-btn">
-              <a href="#"><i class="ti-download"></i> Descargas</a>
-            </li>
-            <li class="search-btn search-icon text-center">
-              <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
     </div>
   </div>
 </div>
@@ -193,11 +136,6 @@ import MapaSismos from '../components/MapaSismos.jsx';
 
 <!-- Main Content -->
 <main class="sismos-main-content">
-  <div style="margin-bottom: 20px;">
-    <a href="index.html" class="btn-volver">
-      <i class="fa fa-arrow-left"></i> Volver al inicio
-    </a>
-  </div>
   <MapaSismos client:only="react" />
 </main>
 
