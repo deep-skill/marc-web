@@ -1,0 +1,27 @@
+# marc-web - Recursos de produccion
+# Generado: 2026-05-21 05:03:41 UTC
+
+REGION=us-east-1
+ACCOUNT_ID=750548849241
+
+# IAM
+ROLE_NAME=marc-prod-lambda-role
+ROLE_ARN=arn:aws:iam::750548849241:role/marc-prod-lambda-role
+
+# Lambda
+LAMBDA_FUNCTION_NAME=marc-prod-sismos-api
+LAMBDA_ARN=arn:aws:lambda:us-east-1:750548849241:function:marc-prod-sismos-api
+
+# API Gateway
+API_NAME=marc-prod-api
+API_ID=rsdm9u888h
+API_ENDPOINT=https://rsdm9u888h.execute-api.us-east-1.amazonaws.com
+ROUTE_KEY=GET /sismos
+
+# S3
+S3_BUCKET_NAME=marc-prod-web
+S3_WEBSITE_ENDPOINT=marc-prod-web.s3-website-us-east-1.amazonaws.com
+
+# Cloudflare DNS pendiente:
+#   CNAME api.marc.com.pe -> rsdm9u888h.execute-api.us-east-1.amazonaws.com    (Proxied)
+#   CNAME marc.com.pe     -> marc-prod-web.s3-website-us-east-1.amazonaws.com      (Proxied, requiere CNAME flattening en apex)

@@ -1,0 +1,56 @@
+name: Deploy frontend to Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - '*.html'
+      - 'css/**'
+      - 'js/**'
+      - 'images/**'
+      - 'fonts/**'
+      - 'astro.config.mjs'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/deploy-frontend.yml'
+  workflow_dispatch:
+
+env:
+  PUBLIC_API_URL: https://api.marc.com.pe/sismos
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - name: Install deps
+        run: npm install
+
+      - name: Build Astro
+        run: npm run build
+
+      - name: Copy legacy HTML + assets to dist/
+        run: |
+          for h in *.html; do cp "$h" dist/; done
+          for d in css js images fonts; do
+            [ -d "$d" ] && cp -r "$d" dist/
+          done
+          [ -f favicon.ico ] && cp favicon.ico dist/ || true
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=marc-web --branch=main
