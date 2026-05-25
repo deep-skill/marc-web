@@ -18,7 +18,7 @@ on:
   workflow_dispatch:
 
 env:
-  PUBLIC_API_URL: https://api.marc.com.pe/sismos
+  PUBLIC_API_URL: https://api.marc.com.pe
 
 jobs:
   deploy:

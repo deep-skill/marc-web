@@ -48,8 +48,8 @@ if [ ! -d node_modules ]; then
 fi
 
 # ===================== 2. BUILD =====================
-echo -e "${YELLOW}Build Astro (PUBLIC_API_URL=https://${PROD_API_FQDN}/sismos)...${NC}"
-PUBLIC_API_URL="https://${PROD_API_FQDN}/sismos" npm run build
+echo -e "${YELLOW}Build Astro (PUBLIC_API_URL=https://${PROD_API_FQDN})...${NC}"
+PUBLIC_API_URL="https://${PROD_API_FQDN}" npm run build
 
 [ -d dist ] || { echo "Error: build no genero dist/"; exit 1; }
 

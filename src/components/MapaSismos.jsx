@@ -262,7 +262,7 @@ export default function MapaSismos() {
       setLoading(false);
       return;
     }
-    fetch(`${baseUrl}?anio=${anioActual}`)
+    fetch(`${baseUrl}/sismos?anio=${anioActual}`)
       .then((res) => {
         if (!res.ok) throw new Error('Network response was not ok');
         return res.json();
