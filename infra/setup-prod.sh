@@ -77,7 +77,7 @@ echo -e "${YELLOW}Resumen:${NC}"
 echo "  Account:    $ACCOUNT_ID"
 echo "  Region:     $REGION"
 echo "  Lambda:     $LAMBDA_FUNCTION_NAME ($LAMBDA_RUNTIME, ${LAMBDA_MEMORY}MB, ${LAMBDA_TIMEOUT}s)"
-echo "  API:        $API_NAME (HTTP API, CORS para $ALLOWED_ORIGIN)"
+echo "  API:        $API_NAME (HTTP API, CORS para $ALLOWED_ORIGINS)"
 echo "  API FQDN:   $PROD_API_FQDN"
 echo "  Frontend:   Cloudflare Pages ($PAGES_PROJECT) - NO se provisiona aqui"
 echo ""
@@ -157,17 +157,19 @@ log_step "3/4" "API Gateway HTTP API..."
 API_ID=$(aws_cli apigatewayv2 get-apis \
     --query "Items[?Name=='$API_NAME'].ApiId" --output text)
 
+CORS_CONFIG='{"AllowOrigins":["'"${ALLOWED_ORIGINS//,/\",\"}"'"],"AllowMethods":["GET","OPTIONS"],"AllowHeaders":["Content-Type"],"MaxAge":300}'
+
 if [ -z "$API_ID" ]; then
     API_ID=$(aws_cli apigatewayv2 create-api \
         --name "$API_NAME" \
         --protocol-type HTTP \
-        --cors-configuration "AllowOrigins=$ALLOWED_ORIGIN,AllowMethods=GET,OPTIONS,AllowHeaders=Content-Type,MaxAge=300" \
+        --cors-configuration "$CORS_CONFIG" \
         --tags "Name=$API_NAME,Environment=$ENV_NAME,Project=$PROJECT" \
         --query 'ApiId' --output text)
     log_success "API creada: $API_ID"
 else
     aws_cli apigatewayv2 update-api --api-id "$API_ID" \
-        --cors-configuration "AllowOrigins=$ALLOWED_ORIGIN,AllowMethods=GET,OPTIONS,AllowHeaders=Content-Type,MaxAge=300" \
+        --cors-configuration "$CORS_CONFIG" \
         --query 'ApiId' --output text > /dev/null
     log_success "API ya existe: $API_ID (CORS refrescado)"
 fi

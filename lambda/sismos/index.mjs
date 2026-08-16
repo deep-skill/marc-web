@@ -5,7 +5,7 @@ const IGP_API = 'https://ultimosismo.igp.gob.pe/api/ultimo-sismo/ajaxb';
 const cache = {};
 const cacheTime = {};
 
-const ALLOWED_ORIGIN = 'https://marc.com.pe';
+const ALLOWED_ORIGINS = ['https://marc.com.pe', 'https://www.marc.com.pe'];
 
 export const handler = async (event) => {
   const params = event.queryStringParameters || {};
@@ -13,8 +13,12 @@ export const handler = async (event) => {
   const mes = params.mes;
   const now = Date.now();
 
+  const origin = event.headers?.origin || event.headers?.Origin;
+  const allowOrigin = ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0];
+
   const corsHeaders = {
-    'Access-Control-Allow-Origin': ALLOWED_ORIGIN,
+    'Access-Control-Allow-Origin': allowOrigin,
+    Vary: 'Origin',
     'Access-Control-Allow-Methods': 'GET, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type',
     'Content-Type': 'application/json',

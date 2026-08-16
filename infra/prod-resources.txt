@@ -1,5 +1,6 @@
 # marc-web - Recursos de produccion
-# Generado: 2026-05-21 05:03:41 UTC
+# Generado: 2026-05-21 05:03:41 UTC (actualizado a mano 2026-08-16: seccion S3
+# eliminada, el frontend vive en Cloudflare Pages)
 
 REGION=us-east-1
 ACCOUNT_ID=750548849241
@@ -18,10 +19,12 @@ API_ID=rsdm9u888h
 API_ENDPOINT=https://rsdm9u888h.execute-api.us-east-1.amazonaws.com
 ROUTE_KEY=GET /sismos
 
-# S3
-S3_BUCKET_NAME=marc-prod-web
-S3_WEBSITE_ENDPOINT=marc-prod-web.s3-website-us-east-1.amazonaws.com
+# Cloudflare Pages (frontend - no provisionado por setup-prod.sh)
+PAGES_PROJECT=marc-web
+PAGES_DOMAIN_APEX=marc.com.pe
+PAGES_DOMAIN_WWW=www.marc.com.pe
 
-# Cloudflare DNS pendiente:
-#   CNAME api.marc.com.pe -> rsdm9u888h.execute-api.us-east-1.amazonaws.com    (Proxied)
-#   CNAME marc.com.pe     -> marc-prod-web.s3-website-us-east-1.amazonaws.com      (Proxied, requiere CNAME flattening en apex)
+# Cloudflare DNS (gestionado por Pages automaticamente al adjuntar dominios):
+#   CNAME api.marc.com.pe -> rsdm9u888h.execute-api.us-east-1.amazonaws.com    (Proxied, manual)
+#   CNAME marc.com.pe     -> marc-web.pages.dev   (auto-creado por Pages)
+#   CNAME www.marc.com.pe -> marc-web.pages.dev   (auto-creado por Pages)
