@@ -4,12 +4,19 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-Sitio web corporativo estático en español para **MARC Ingeniería y Construcción SAC** (Perú). No hay sistema de build, ni gestor de paquetes, ni framework de pruebas — son archivos `.html` planos servidos directamente, más dos endpoints `.php` para los formularios.
+Sitio web corporativo en español para **MARC Ingeniería y Construcción SAC** (Perú). Es un híbrido: la mayoría de páginas son `.html` planos legacy (más dos endpoints `.php` para formularios), y la sección de sismos es una isla **Astro + React** en `src/` que se compila con npm. En producción el frontend vive en **Cloudflare Pages** y la API de sismos en **AWS** (ver "Despliegue e infraestructura").
 
 ## Commands
 
-No existe pipeline de build/test/lint. El "desarrollo" es editar los `.html`/`css`/`js` y abrirlos en el navegador.
+Para las páginas legacy no hay build/test/lint: se editan los `.html`/`css`/`js` y se validan en el navegador. La parte Astro sí tiene toolchain:
 
+- **Astro (página de sismos)** — requiere Node >= 22.12:
+  ```sh
+  npm install
+  PUBLIC_API_URL=https://api.marc.com.pe npm run dev    # dev server
+  PUBLIC_API_URL=https://api.marc.com.pe npm run build  # genera dist/
+  ```
+  `PUBLIC_API_URL` es la URL **base** de la API, sin path — el componente le añade `/sismos`.
 - **Vista previa local sin PHP** (estilos, JS, navegación): abrir `index.html` directamente, o servir el directorio:
   ```sh
   python3 -m http.server 8000
@@ -45,6 +52,15 @@ Páginas comerciales activas en el menú principal: `index.html`, `about-us.html
 - La variable `$to` en ambos archivos está **vacía** (`$to = '';`). Debe definirse al dirección destino antes de desplegar a producción, o los correos no se enviarán.
 - Los nombres de campo del formulario están acoplados a los `name="..."` de los `<input>` en `contact.html` / `get-quote.html` (p. ej. `name-contact`, `subject-contact`, `email-contact`, `phone-contact`, `cmy-name`, `message` para contacto; `name-quote`, `email-quote`, `phone-quote`, `cmp-name`, `prj-title`, `your-req` para cotización). Renombrar inputs requiere actualizar el `.php` correspondiente.
 - En éxito redirigen a `index.html` mediante `header("Location:...")`; en fallo imprimen un mensaje plano. No hay validación ni protección CSRF/spam.
+
+### Sección de sismos (Astro + React)
+`src/pages/sismos.astro` monta `src/components/MapaSismos.jsx` (React + Leaflet), que consume la API de sismos. `astro.config.mjs` usa `build: { format: 'file' }` para generar `sismos.html` (no `sismos/index.html`) y así encajar con los links `href="sismos.html"` de los HTML legacy.
+
+### Despliegue e infraestructura
+- **Frontend**: Cloudflare Pages, proyecto `marc-web`, sirviendo `marc.com.pe` y `www.marc.com.pe`. Un push a `main` dispara `.github/workflows/deploy-frontend.yml`: compila Astro, copia los HTML legacy y assets a `dist/`, y publica con wrangler. El frontend NO está en AWS/S3.
+- **API de sismos**: `lambda/sismos/index.mjs` es un proxy con caché del API del IGP, desplegado como Lambda `marc-prod-sismos-api` + API Gateway en la cuenta AWS de deepskill (`750548849241`, `us-east-1`), expuesto como `api.marc.com.pe`. Deploy de código: `./infra/deploy-lambda.sh`. Setup completo: `./infra/setup-prod.sh`. IDs reales en `infra/prod-resources.txt`.
+- **CORS**: los orígenes permitidos viven en DOS sitios que deben mantenerse sincronizados — `ALLOWED_ORIGINS` en `infra/config.env` (aplica al API Gateway vía setup script) y la constante `ALLOWED_ORIGINS` en `lambda/sismos/index.mjs`. Añadir un dominio requiere actualizar ambos, correr `update-api` (o `setup-prod.sh`) y redesplegar la Lambda.
+- **DNS**: gestionado en Cloudflare.
 
 ### Integraciones de terceros embebidas en `index.html`
 - **Google Analytics** Universal (gtag) con id `UA-149873321-3`.
