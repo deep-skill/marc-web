@@ -1,31 +1,25 @@
 # Lambda Sismos - IGP API Proxy
 
-AWS Lambda que proxyea y cachea la API del IGP para el sitio marc.com.pe.
+AWS Lambda que proxyea y cachea (10 min) la API del IGP para la página `/sismos` del sitio.
 
-## Deploy manual
+- **Función**: `marc-prod-sismos-api` (Node 20, cuenta deepskill `750548849241`, `us-east-1`)
+- **Expuesta como**: `https://api.marc.com.pe/sismos` (API Gateway HTTP API `marc-prod-api`, stage `$default`)
+- **CORS**: orígenes permitidos en `ALLOWED_ORIGINS` (aquí en `index.mjs` **y** en `infra/config.env` para el API Gateway — mantener ambos sincronizados)
+
+## Deploy
 
 ```bash
-cd lambda/sismos
-zip -r sismos-lambda.zip index.mjs package.json
-
-aws lambda update-function-code \
-  --function-name marc-sismos-api \
-  --zip-file fileb://sismos-lambda.zip
+./infra/deploy-lambda.sh   # empaqueta, sube y corre smoke test
 ```
 
-## API Gateway
+El setup completo de infraestructura (rol IAM, Lambda, API Gateway, CORS) es `./infra/setup-prod.sh`; los IDs reales quedan en `infra/prod-resources.txt`.
 
-1. Crear HTTP API en API Gateway
-2. Integrar con la Lambda `marc-sismos-api`
-3. Configurar CORS:
-   - Origin permitido: `https://marc.com.pe`
-   - Métodos: `GET, OPTIONS`
-   - Headers: `Content-Type`
+## Frontend
 
-## Variables de entorno
-
-Agregar en `.env` del proyecto frontend:
+El componente `src/components/MapaSismos.jsx` consume la API vía `PUBLIC_API_URL`, que debe ser la URL **base sin path** (el componente añade `/sismos`):
 
 ```
-PUBLIC_API_URL=https://<api-id>.execute-api.<region>.amazonaws.com/prod
+PUBLIC_API_URL=https://api.marc.com.pe
 ```
+
+En CI está definida en `.github/workflows/deploy-frontend.yml`.

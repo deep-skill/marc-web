@@ -6,7 +6,7 @@
 #       con CORS.
 #
 # El frontend NO esta en AWS: vive en Cloudflare Pages (proyecto marc-web).
-# Setup de Pages: se hace una sola vez via API (ver infra/README.md) y los
+# Setup de Pages: se hace una sola vez (proyecto marc-web en el dashboard) y los
 # deploys subsecuentes corren automaticamente via .github/workflows/deploy-frontend.yml
 # al hacer push a main, o manualmente con ./infra/deploy-frontend.sh.
 #
