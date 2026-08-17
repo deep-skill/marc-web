@@ -6,6 +6,7 @@ on:
     paths:
       - 'src/**'
       - 'public/**'
+      - 'functions/**'
       - '*.html'
       - 'css/**'
       - 'js/**'
